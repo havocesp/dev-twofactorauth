@@ -1,0 +1,7 @@
+.idea
+.jekyll-cache
+.workspace
+_data
+img
+_site/
+Gemfile.lock
