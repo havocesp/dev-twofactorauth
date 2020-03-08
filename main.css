@@ -9,7 +9,8 @@ body {
     }
 }
 
-td, th {
+td,
+th {
     text-align: center;
 }
 
@@ -27,7 +28,6 @@ thead {
     margin: 5vh auto;
     height: 40vh;
     text-align: center;
-
 }
 
 #main h2 {
@@ -93,12 +93,13 @@ td {
     margin: auto;
 }
 
-.u2f-icon > img {
+.u2f-icon>img {
     text-align: center;
     margin: auto
 }
 
-.fa-book, .tfa-icon {
+.fa-book,
+.tfa-icon {
     font-size: 20px;
 }
 
@@ -106,7 +107,8 @@ td {
     color: #2c662d;
 }
 
-.fas, .fab {
+.fas,
+.fab {
     line-height: inherit;
 }
 
@@ -116,4 +118,40 @@ td {
 
 .icon-cell {
     width: 12%;
+}
+
+.cat {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+}
+
+.cat > h5 {
+    box-sizing: border-box;
+    display: inline-block;
+    float: none;
+    position: static;
+}
+
+.category-title {
+    box-sizing: border-box;
+    display: inline;
+    float: none;
+    line-height: 23.16px;
+    position: static;
+}
+
+h5:first-child {
+    margin-top: 0;
+}
+
+.category-icon {
+    border-radius: 50%;
+    background-color: #fff;
+    border: solid #fff 1.5vh;
+    font-size: 36px;
+    margin: auto 18px;
+    height: 73px;
+    width: 73px;
+    text-align: center;
 }
