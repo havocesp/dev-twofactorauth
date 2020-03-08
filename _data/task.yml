@@ -1,0 +1,115 @@
+websites:
+  - name: ActiveCollab
+    url: https://activecollab.com/
+    twitter: activecollab
+    img: activecollab.png
+
+  - name: Airtable
+    url: https://airtable.com
+    img: airtable.png
+    tfa:
+      - sms
+      - totp
+    doc: https://support.airtable.com/hc/en-us/articles/219409917
+
+  - name: Any.do
+    url: https://web.any.do/
+    img: anydo.png
+    twitter: Anydo
+    facebook: Any.do
+    email_address: feedback@any.do
+
+  - name: Asana
+    url: https://www.asana.com
+    img: asana.png
+    twitter: asana
+    facebook: asana
+    email_address: support@asana.com
+
+  - name: Azendoo
+    url: https://app.azendoo.com
+    img: azendoo.png
+    twitter: azendoo
+
+  - name: Breeze
+    url: https://www.breeze.pm
+    img: breeze.png
+    twitter: BreezeTeam
+    facebook: breeze.pm
+
+  - name: ClickUp
+    url: https://clickup.com
+    img: clickup.png
+    tfa:
+      - sms
+    doc: https://docs.clickup.com/general/two-factor-authentication
+
+  - name: Clubhouse
+    url: https://clubhouse.io
+    img: clubhouse.png
+    tfa:
+      - totp
+    doc: https://help.clubhouse.io/hc/en-us/articles/206288915
+
+  - name: fruux
+    url: https://fruux.com
+    img: fruux.png
+    twitter: fruux
+
+  - name: Meistertask
+    url: https://www.meistertask.com
+    img: meistertask.png
+    tfa:
+      - totp
+    doc: https://support.mindmeister.com/hc/en-us/articles/218901367
+
+  - name: Microsoft To-Do
+    url: https://todo.microsoft.com/
+    img: microsofttodo.png
+    tfa:
+      - sms
+      - email
+      - totp
+    doc: https://support.microsoft.com/en-us/help/12408/
+
+  - name: Planio
+    url: https://plan.io
+    img: planio.png
+    tfa:
+      - totp
+    doc: https://support.plan.io/news/133
+
+  - name: Remember The Milk
+    url: https://www.rememberthemilk.com
+    twitter: rememberthemilk
+    facebook: rememberthemilk
+    img: rememberthemilk.png
+    email_address: help@rememberthemilk.com
+
+  - name: Todoist
+    url: https://todoist.com
+    twitter: todoist
+    facebook: Todoist
+    email_address: support@todoist.com
+    img: todoist.png
+
+  - name: Toggl
+    url: https://toggl.com
+    img: toggl.png
+    twitter: toggl
+    facebook: Toggl
+
+  - name: Toodledo
+    url: https://www.toodledo.com
+    img: toodledo.png
+    tfa:
+      - totp
+    doc: https://www.toodledo.com/info/help.php#168
+
+  - name: Trello
+    url: https://trello.com
+    img: trello.png
+    tfa:
+      - sms
+      - totp
+    doc: https://help.trello.com/article/993--

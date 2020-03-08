@@ -1,0 +1,447 @@
+websites:
+  - name: American Electric Power
+    url: https://www.aep.com/
+    twitter: AEPnews
+    facebook: americanelectricpower
+    img: aep.png
+
+  - name: Andrews &amp; Arnold
+    url: https://aa.net.uk
+    img: aaisp.png
+    tfa:
+      - totp
+    doc: https://aa.net.uk/kb-broadband-2fa.html
+    exception: "While both the accounts and control web pages support 2FA, each system is separate and requires its own setup."
+
+  - name: Arcadia Power
+    url: https://www.arcadiapower.com/
+    twitter: ArcadiaPower
+    facebook: ArcadiaPower
+    email_address: customercare@arcadiapower.com
+    img: arcadia.png
+
+  - name: AT&amp;T
+    url: https://www.att.com/
+    twitter: ATTCares
+    facebook: ATT
+    img: att.png
+
+  - name: Blau.de
+    url: https://www.blau.de/
+    img: blau.png
+    facebook: blaumobilfunk
+    lang: de
+
+  - name: BT
+    url: https://www.bt.com/
+    img: bt.png
+    twitter: bt_uk
+    facebook: BTUK
+
+  - name: Bulb
+    url: https://www.bulb.co.uk
+    twitter: bulbenergy
+    facebook: bulb
+    img: bulbenergy.png
+
+  - name: Cablevisión Fibertel
+    url: https://www.cablevisionfibertel.com.ar/
+    twitter: CableFibertel
+    facebook: cablevisionfibertel
+    img: cablevisionfibertel.png
+    lang: es
+
+  - name: CallCentric
+    url: https://www.callcentric.com/
+    img: callcentric.png
+    tfa:
+      - email
+    doc: https://www.callcentric.com/features/two_point_authentication
+
+  - name: CenturyLink
+    url: https://www.centurylink.com/
+    twitter: CenturyLink
+    facebook: CenturyLink
+    img: centurylink.png
+
+  - name: Charter Spectrum
+    url: https://www.spectrum.com/
+    twitter: GetSpectrum
+    facebook: Spectrum
+    img: charter.png
+
+  - name: Comcast
+    url: https://www.xfinity.com/
+    img: comcast.png
+    tfa:
+      - sms
+      - email
+      - proprietary
+    doc: https://www.xfinity.com/support/account/enroll-2-step-verification/
+    exception: "Email 2FA requires the use of a non-Comcast.net email address."
+
+  - name: ComEd
+    url: https://www.comed.com/
+    twitter: ComEd
+    facebook: ComEd
+    img: comed.png
+
+  - name: Con Edison
+    url: https://www.coned.com/
+    img: coned.png
+    tfa:
+      - sms
+      - phone
+      - totp
+      - proprietary
+    doc: https://www.coned.com/-/media/files/coned/documents/small-medium-large-businesses/building-project-center/contractor-resources/user-registration-guide.pdf?la=en
+    exception: "Requires phone number to set up. Can be bypassed by customer support." 
+
+  - name: Cox
+    url: https://www.cox.com/
+    twitter: CoxHelp
+    facebook: coxcommunications
+    img: cox.png
+
+  - name: Deutsche Telekom
+    url: https://www.telekom.de/
+    twitter: deutschetelekom
+    facebook: deutschetelekom
+    email_address: impressum@telekom.de
+    img: deutschetelekom.png
+    lang: de
+
+  - name: DIRECTV
+    url: https://www.directv.com/
+    twitter: DIRECTVService
+    facebook: directv
+    img: directv.png
+
+  - name: DISH Network
+    url: https://www.dish.com/
+    twitter: dish_answers
+    facebook: DISH
+    img: dish.png
+
+  - name: Dominion Energy
+    url: https://www.dominionenergy.com/
+    twitter: DominionEnergy
+    img: dominion.png
+
+  - name: DTE Energy
+    url: https://www.dteenergy.com/
+    twitter: DTE_Energy
+    facebook: dteenergy
+    img: dteenergy.png
+
+  - name: Duke Energy
+    url: https://www.duke-energy.com/
+    twitter: DukeEnergy
+    facebook: duke.energy
+    img: duke.png
+
+  - name: EE
+    url: https://ee.co.uk/
+    twitter: EE
+    facebook: ee
+    img: ee.png
+
+  - name: Ergon Energy
+    url: https://www.ergon.com.au/
+    twitter: ErgonEnergy
+    facebook: ErgonEnergy
+    email_address: customerservice@ergon.com.au
+    img: ergon.png
+
+  - name: Eversource
+    url: https://www.eversource.com/
+    twitter: EversourceCorp
+    facebook: EversourceEnergy
+    img: eversource.png
+
+  - name: Florida Power and Light
+    url: https://www.fpl.com/
+    twitter: insideFPL
+    facebook: fplconnect
+    img: fpl.png
+
+  - name: Frontier
+    url: https://frontier.com/
+    twitter: AskFrontier
+    facebook: FrontierCorp
+    img: frontier.png
+
+  - name: Georgia Power
+    url: https://www.georgiapower.com/
+    twitter: GeorgiaPower
+    facebook: GeorgiaPower
+    img: georgiapower.png
+
+  - name: Google Fi
+    url: https://fi.google.com/
+    img: projectfi.png
+    tfa:
+      - sms
+      - phone
+      - totp
+      - hardware
+    doc: https://www.google.com/intl/en-US/landing/2step/features.html
+
+  - name: Google Fiber
+    url: https://fiber.google.com/
+    img: googlefiber.png
+    tfa:
+      - sms
+      - phone
+      - totp
+      - proprietary
+      - hardware
+    doc: https://www.google.com/intl/en-US/landing/2step/features.html
+
+  - name: Halebop
+    url: https://www.halebop.se/
+    img: halebop.png
+    tfa:
+      - proprietary
+    doc: https://github.com/2factorauth/twofactorauth/pull/2304#issue-200730083
+    exception: "2FA is only available for Swedish citizens with BankID."
+
+  - name: Koodo Mobile
+    url: https://www.koodomobile.com
+    twitter: koodo
+    facebook: Koodo
+    img: koodo.png
+
+  - name: Moj Tele2
+    url: https://moj.tele2.hr/
+    twitter: Tele2Croatia
+    facebook: tele2.hr
+    img: mojtele2.png
+    lang: hr
+
+  - name: Nicor Gas
+    url: https://www.nicorgas.com/
+    twitter: Nicor_Gas
+    facebook: NicorGas
+    img: nicorgas.png
+
+  - name: Optus
+    url: https://www.optus.com.au/
+    twitter: Optus
+    facebook: optus
+    img: optus.png
+
+  - name: Orange
+    url: https://www.orange.fr/portail
+    twitter: Orange_France
+    facebook: Orange.France
+    img: orange.png
+    lang: fr
+
+  - name: Pacific Gas and Electric Company PG&amp;E
+    url: https://www.pge.com/
+    twitter: PGE4Me
+    facebook: pacificgasandelectric
+    img: pge.png
+
+  - name: PowerStream
+    url: https://www.powerstream.ca/
+    twitter: AlectraNews
+    facebook: PowerStreamPage
+    img: powerstream.png
+
+  - name: RCN
+    url: https://www.rcn.com/
+    twitter: RCNconnects
+    facebook: RCN
+    img: rcn.png
+
+  - name: Republic Wireless
+    url: https://republicwireless.com/
+    img: rw.png
+    tfa:
+      - totp
+    doc: https://help.republicwireless.com/hc/en-us/articles/360008803994
+
+  - name: Rochester Gas & Electric
+    url: https://www.rge.com/
+    twitter: RGandE
+    facebook: RochGandE
+    img: rge.png
+
+  - name: Rogers
+    url: https://www.rogers.com/
+    twitter: RogersHelps
+    facebook: Rogers
+    img: rogers.png
+
+  - name: San Diego Gas & Electric
+    url: https://www.sdge.com/
+    twitter: SDGE
+    facebook: SanDiegoGasandElectric
+    img: sdge.png
+
+  - name: sipgate
+    url: https://www.sipgate.de/
+    twitter: sipgateDE
+    facebook: sipgate
+    img: sipgate.png
+    lang: de
+
+  - name: Sonic
+    url: https://www.sonic.com/
+    img: sonic.png
+    tfa:
+      - sms
+      - phone
+      - totp
+    doc: https://help.sonic.com/hc/en-us/articles/236079387
+
+  - name: Sosh
+    url: https://www.sosh.fr
+    twitter: Sosh_fr
+    facebook: sosh
+    img: sosh.png
+    lang: fr
+
+  - name: Southern California Edison
+    url: https://www.sce.com/
+    twitter: SCE
+    facebook: sce
+    img: sce.png
+
+  - name: Sprint
+    url: https://www.sprint.com/
+    twitter: sprint
+    facebook: sprint
+    img: sprint.png
+
+  - name: Swisscom
+    url: https://www.swisscom.ch/
+    twitter: Swisscom_de
+    facebook: Swisscom
+    img: swisscom.png
+    lang: de
+
+  - name: T-Mobile
+    url: https://www.t-mobile.com/
+    img: tmobile.png
+    tfa:
+      - sms
+    doc: https://support.t-mobile.com/docs/DOC-2727
+
+  - name: Telia (Sweden)
+    url: https://www.telia.se/
+    img: telia.png
+    tfa:
+      - proprietary
+    doc: https://www.telia.se/privat/support/info/logga-in-med-bankid-och-eleg-pa-mitt-telia
+    exception: "2FA is only available for Swedish citizens with BankID."
+
+  - name: Telstra
+    url: https://www.telstra.com.au/
+    twitter: Telstra
+    facebook: Telstra24x7
+    img: telstra.png
+
+  - name: Telus
+    url: https://www.telus.com
+    twitter: TELUSsupport
+    facebook: telus
+    img: telus.png
+
+  - name: Telzio
+    url: https://www.telzio.com/
+    img: telzio.png
+    tfa:
+      - totp
+    doc: https://telzio.com/support/two-factor-authentication
+
+  - name: Three UK
+    url: http://www.three.co.uk/
+    twitter: ThreeUK
+    facebook: ThreeUK
+    img: three.png
+
+  - name: TIM
+    url: https://www.tim.it/
+    twitter: TIM_Official
+    facebook: TimOfficialPage
+    img: tim.png
+    lang: it
+
+  - name: Ting
+    url: https://ting.com/
+    img: ting.png
+    tfa:
+      - sms
+      - totp
+    doc: https://help.ting.com/hc/en-us/articles/209351258
+
+  - name: Verizon
+    url: https://www.verizon.com/
+    twitter: VerizonSupport
+    facebook: verizon
+    img: verizon.png
+
+  - name: Verizon Wireless
+    url: https://www.verizonwireless.com/
+    twitter: VZWSupport
+    img: verizon.png
+
+  - name: Vimla
+    url: https://vimla.se/
+    twitter: Vimla_se
+    facebook: vimla.se
+    img: vimla.png
+    lang: sv
+
+  - name: Virgin Media (IE)
+    url: https://www.virginmedia.ie/
+    twitter: VirginMediaIE
+    facebook: VirginMediaIreland
+    img: virginmedia.png
+
+  - name: Virgin Media (UK)
+    url: https://www.virginmedia.com/
+    twitter: virginmedia
+    facebook: virginmedia
+    img: virginmedia.png
+
+  - name: Virgin Mobile
+    url: https://www.virgin.com/gateways/mobile
+    twitter: Virgin
+    facebook: virgin
+    img: virginmobile.png
+
+  - name: Vodafone (DE)
+    url: https://www.vodafone.de/
+    twitter: vodafoneservice
+    facebook: vodafoneDE
+    img: vodafone.png
+    lang: de
+
+  - name: Vodafone (IE)
+    url: https://www.vodafone.ie/
+    twitter: VodafoneIreland
+    facebook: vodafoneireland
+    img: vodafone.png
+
+  - name: Vodafone (IT)
+    url: http://www.vodafone.it/
+    twitter: VodafoneIT
+    facebook: vodafoneit
+    img: vodafone.png
+
+  - name: Vodafone (UK)
+    url: https://www.vodafone.co.uk/
+    img: vodafone.png
+    tfa:
+      - sms
+
+  - name: VoIP.ms
+    url: https://voip.ms/
+    img: voipms.png
+    tfa:
+      - email
+    doc: https://wiki.voip.ms/article/Two-step_Verification

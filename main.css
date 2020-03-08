@@ -1,0 +1,112 @@
+body {
+    background-color: #fff;
+    font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #777;
+    }
+}
+td, th {
+    text-align: center;
+}
+
+thead {
+    background-color: #ffffff;
+}
+
+#main {
+    margin: 5vh auto;
+    height: 40vh;
+    text-align: center;
+
+}
+
+#main h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300 !important;
+}
+
+#logo {
+    margin: 1vh auto;
+    height: 30vh;
+    display: block;
+}
+
+table {
+    font-family: 'Spartan', sans-serif;
+    border-radius: 5px;
+    width: 100%;
+}
+
+th {
+    font-weight: 500;
+}
+
+td {
+    font-weight: 400;
+}
+
+.col {
+    display: block;
+}
+
+.logo {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    margin-right: .8em;
+}
+
+.site-name {
+    text-align: center;
+    margin: auto 0;
+}
+
+.social-button {
+    width: 10vw;
+    color: white;
+}
+
+.twitter-button {
+    background-color: dodgerblue;
+}
+
+.facebook-button {
+    background-color: #3b5998;
+}
+
+.email-button {
+    background-color: #ea4235;
+}
+
+.u2f-icon {
+    width: min-content;
+    margin: auto;
+}
+
+.u2f-icon > img {
+    text-align: center;
+    margin: auto
+}
+
+.fa-book, .tfa-icon {
+    font-size: 20px;
+}
+
+.tfa-icon {
+    color: #2c662d;
+}
+
+.fas, .fab {
+    line-height: inherit;
+}
+
+.social-button-group {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.icon-cell {
+    width: 12%;
+}

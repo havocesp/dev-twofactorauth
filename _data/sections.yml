@@ -1,0 +1,127 @@
+- id: backup
+  title: Backup and Sync
+  icon: cloud upload
+
+- id: banking
+  title: Banking
+  icon: dollar
+
+- id: betting
+  title: Betting
+  icon: trophy
+
+- id: cloud
+  title: Cloud Computing
+  icon: cloud
+
+- id: communication
+  title: Communication
+  icon: chat
+
+- id: cryptocurrencies
+  title: Cryptocurrencies
+  icon: btc
+
+- id: developer
+  title: Developer
+  icon: code
+
+- id: domains
+  title: Domains
+  icon: globe
+
+- id: education
+  title: Education
+  icon: book
+
+- id: email
+  title: Email
+  icon: mail
+
+- id: entertainment
+  title: Entertainment
+  icon: play
+
+- id: finance
+  title: Finance
+  icon: money
+
+- id: food
+  title: Food
+  icon: utensils
+
+- id: gaming
+  title: Gaming
+  icon: gamepad
+
+- id: government
+  title: Government
+  icon: university
+
+- id: health
+  title: Health
+  icon: heartbeat
+
+- id: hosting
+  title: Hosting/VPS
+  icon: sitemap
+
+- id: hotels
+  title: Hotels and Accommodations
+  icon: bed
+
+- id: identity
+  title: Identity Management
+  icon: id card
+
+- id: investing
+  title: Investing
+  icon: chart line
+
+- id: iot
+  title: IoT
+  icon: wifi
+
+- id: legal
+  title: Legal
+  icon: legal
+
+- id: other
+  title: Other
+  icon: ellipsis horizontal
+
+- id: payments
+  title: Payments
+  icon: credit card outline
+
+- id: remote
+  title: Remote Access
+  icon: desktop
+
+- id: retail
+  title: Retail
+  icon: shopping cart
+
+- id: security
+  title: Security
+  icon: unlock
+
+- id: social
+  title: Social
+  icon: users
+
+- id: task
+  title: Task Management
+  icon: tasks
+
+- id: transport
+  title: Transport
+  icon: car
+
+- id: utilities
+  title: Utilities
+  icon: phone
+
+- id: vpn
+  title: VPN Providers
+  icon: shield alternate
