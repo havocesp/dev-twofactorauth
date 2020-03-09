@@ -1,20 +1,11 @@
-{% for section in site.data.sections %}
+{% assign section_id = include.id-param %}
+{% assign section_title = include.title-param %}
 
-    <div class="col-2 btn cat" type="button" data-toggle="collapse" data-target="#{{section.id}}-table" aria-expanded="false" aria-controls="{{section.id}}-table">
-        <h5 style="display: inline-block; text-align: center; margin-top: 0;">
-            <div style="width: 100%">
-                <i class="{{section.icon}} category-icon"></i>
-            </div>
-
-            <small class="category-title">{{ section.title }}</small>
-        </h5>
-    </div>
-
-    <div id="{{section.id}}-table" class="collapse category-table">
+<div id="{{section_id}}-table" class="collapse category-table">
         <table class="table table-hover table-bordered table-bordered">
             <thead>
                 <tr>
-                    <th scope="col">{{ section.title }}</th>
+                    <th scope="col">{{ section_title }}</th>
                     <th scope="col">Docs</th>
                     <th scope="col">SMS</th>
                     <th scope="col">Phone Call</th>
@@ -24,7 +15,7 @@
                 </tr>
             </thead>
             <tbody>
-                {% for website in site.data[section.id].websites %}
+                {% for website in site.data[section_id].websites %}
                     {% if website.tfa %}
                         <tr class="table-success">
                         {%else %}
@@ -32,7 +23,7 @@
                             {% endif %}
                             <td>
                                 <div class="row no-gutters">
-                                    <img class="logo lazyload" data-src="/img/{{ section.id }}/{{ website.img }}" src="/img/placeholder.png">
+                                    <img class="logo lazyload" data-src="/img/{{ section_id }}/{{ website.img }}" src="/img/placeholder.png">
                                     <a class="site-name" href="{{ webite.url }}">{{ website.name }}</a>
                                 </div>
                             </td>
@@ -116,4 +107,3 @@
         </table>
     </div>
 
-{% endfor %}

@@ -3,41 +3,75 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <link href="{{ site.img }}" rel="icon">
-    <title>{{ site.title }}</title>
+    <head>
+        <meta charset="UTF-8">
+        <link href="{{ site.img }}" rel="icon">
+        <title>{{ site.title }}</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Spartan:200,300,400,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet"> 
-    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" rel="stylesheet" />
-    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" rel="stylesheet" />
-    <link href="main.css" rel="stylesheet">
-</head>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Spartan:200,300,400,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+        <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" rel="stylesheet"/>
+        <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" rel="stylesheet"/>
+        <link href="main.css" rel="stylesheet">
+    </head>
 
-<body>
+    <body>
 
-    <div class="container">
-        <div id="main">
-            <img id="logo" src="Logo%20with%20circle.svg">
-            <h2>Two Factor Auth (2FA)</h2>
-            <div class="sub header">List of websites and whether or not they support
-                <a href="https://en.wikipedia.org/wiki/Two-factor_authentication">2FA</a>.
+        <div class="container">
+            <div id="main">
+                <img id="logo" src="Logo%20with%20circle.svg">
+                <h2>Two Factor Auth (2FA)</h2>
+                <div class="sub header">List of websites and whether or not they support
+                    <a href="https://en.wikipedia.org/wiki/Two-factor_authentication">2FA</a>.
+                </div>
             </div>
-        </div>
 
-        <div class="row">
+                <div class="row justify-content-start">
+                  {% assign rowcount = 0 %}
+                  {% for section in site.data.sections %}
+                  {% assign rowend = forloop.index | modulo: 5 %}
+                  {% if rowend == 0 or forloop.index == forloop.length %}
+                  <div class="col btn cat" type="button" data-toggle="collapse" data-target="#{{section.id}}-table" aria-expanded="false" aria-controls="{{section.id}}-table">
+                    <h5 style="display: inline-block; text-align: center; margin-top: 0;">
+                        <div style="width: 100%">
+                            <i class="{{section.icon}} category-icon"></i>
+                        </div>
+            
+                        <small class="category-title">{{ section.title }}</small>
+                    </h5>
+                </div>
+                  {% include mobile-table.html id-param=section.id title-param=section.title %}
+                  {% assign offcount = 5 | times: rowcount %}
+                  {% for section in site.data.sections limit: 5 offset: offcount %}
+                  {% include table.html id-param=section.id title-param=section.title %}
+                  {% endfor %}
+                </div>
+                {% if forloop.index != forloop.length %}
+                {% assign rowcount = rowcount | plus: '1' %}
+                <div class="row justify-content-start">
+                {% endif %}
+                  {% else %}
+                  <div class="col btn cat" type="button" data-toggle="collapse" data-target="#{{section.id}}-table" aria-expanded="false" aria-controls="{{section.id}}-table">
+                    <h5 style="display: inline-block; text-align: center; margin-top: 0;">
+                        <div style="width: 100%">
+                            <i class="{{section.icon}} category-icon"></i>
+                        </div>
+            
+                        <small class="category-title">{{ section.title }}</small>
+                    </h5>
+                </div>
+                  {% include mobile-table.html id-param=section.id title-param=section.title %}
+                  {% endif %}
+                  {% endfor %}
+              
 
-            {% include table.html %}
+                <script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script crossorigin="anonymous" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+                <script src="main.js"></script>
+            </body>
 
-        </div>
-    </div>
-
-    <script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
-    <script src="main.js"></script>
-</body>
-
-</html>
+        </html>
+    </body>
+</html>>
