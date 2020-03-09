@@ -169,3 +169,13 @@ h5:first-child {
 .category-row {
     margin: 2vh auto;
 }
+
+input.text,
+input[type="text"],
+input[type="button"],
+div[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
+}
