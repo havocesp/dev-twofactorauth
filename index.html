@@ -27,44 +27,32 @@
                 </div>
             </div>
 
-                <div class="row justify-content-start category-row">
-                  {% assign rowcount = 0 %}
-                  {% for section in site.data.sections %}
-                  {% assign rowend = forloop.index | modulo: 5 %}
-                  {% if rowend == 0 or forloop.index == forloop.length %}
-                  <div class="col btn cat" type="button" data-toggle="collapse" data-target="#{{section.id}}-table" aria-expanded="false" aria-controls="{{section.id}}-table">
-                    <h5 style="display: inline-block; text-align: center; margin-top: 0;">
-                        <div style="width: 100%">
-                            <i class="{{section.icon}} category-icon"></i>
-                        </div>
-            
-                        <small class="category-title">{{ section.title }}</small>
-                    </h5>
-                </div>
-                  {% include mobile-table.html id-param=section.id title-param=section.title %}
-                  {% assign offcount = 5 | times: rowcount %}
-                  {% for section in site.data.sections limit: 5 offset: offcount %}
-                  {% include table.html id-param=section.id title-param=section.title %}
-                  {% endfor %}
-                </div>
-                {% if forloop.index != forloop.length %}
-                {% assign rowcount = rowcount | plus: '1' %}
-                <div class="row justify-content-start category-row">
-                {% endif %}
-                  {% else %}
-                  <div class="col btn cat" type="button" data-toggle="collapse" data-target="#{{section.id}}-table" aria-expanded="false" aria-controls="{{section.id}}-table">
-                    <h5 style="display: inline-block; text-align: center; margin-top: 0;">
-                        <div style="width: 100%">
-                            <i class="{{section.icon}} category-icon"></i>
-                        </div>
-            
-                        <small class="category-title">{{ section.title }}</small>
-                    </h5>
-                </div>
-                  {% include mobile-table.html id-param=section.id title-param=section.title %}
-                  {% endif %}
-                  {% endfor %}
-              
+            <div class="row justify-content-start category-row">
+
+                {% assign rowcount = 0 %}
+                {% for section in site.data.sections %}
+                    {% assign rowend = forloop.index | modulo: 5 %}
+                    {% if rowend == 0 or forloop.index == forloop.length %}
+
+                        {% include category-button.html %}
+
+                        {% include mobile-table.html id-param=section.id title-param=section.title %}
+                        {% assign offcount = 5 | times: rowcount %}
+                        {% for section in site.data.sections limit: 5 offset: offcount %}
+                            {% include table.html id-param=section.id title-param=section.title %}
+                        {% endfor %}
+                    </div>
+                    {% if forloop.index != forloop.length %}
+                        {% assign rowcount = rowcount | plus: '1' %}
+                        <div class="row justify-content-start category-row">
+                        {% endif %}
+                    {% else %}
+
+                        {% include category-button.html %}
+                        {% include mobile-table.html id-param=section.id title-param=section.title %}
+
+                    {% endif %}
+                {% endfor %}
 
                 <script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
                 <script crossorigin="anonymous" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -74,4 +62,4 @@
 
         </html>
     </body>
-</html>>
+</html>

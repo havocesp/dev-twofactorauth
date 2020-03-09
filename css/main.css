@@ -9,8 +9,7 @@ body {
     }
 }
 
-td,
-th {
+td, th {
     text-align: center;
 }
 
@@ -102,8 +101,7 @@ td {
     margin: auto
 }
 
-.fa-book,
-.tfa-icon {
+.fa-book, .tfa-icon {
     font-size: 20px;
 }
 
@@ -111,8 +109,7 @@ td {
     color: #2c662d;
 }
 
-.fas,
-.fab {
+.fas, .fab {
     line-height: inherit;
 }
 
@@ -130,11 +127,14 @@ td {
     position: relative;
     width: 90vw;
     z-index: 1000;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 .category-table, table {
     width: 100%;
 }
+
 .cat > h5 {
     box-sizing: border-box;
     display: inline-block;
@@ -166,16 +166,7 @@ h5:first-child {
     width: 73px;
     text-align: center;
 }
+
 .category-row {
     margin: 2vh auto;
-}
-
-input.text,
-input[type="text"],
-input[type="button"],
-div[type="button"],
-input[type="submit"],
-.input-checkbox {
--webkit-appearance: none;
-border-radius: 0;
 }
