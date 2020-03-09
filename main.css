@@ -48,13 +48,17 @@ table {
 }
 
 th {
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 td {
     font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px !important;
 }
-
 .col {
     display: block;
 }
@@ -124,8 +128,13 @@ td {
     box-sizing: border-box;
     display: block;
     position: relative;
+    width: 90vw;
+    z-index: 1000;
 }
 
+.category-table, table {
+    width: 100%;
+}
 .cat > h5 {
     box-sizing: border-box;
     display: inline-block;
@@ -139,6 +148,8 @@ td {
     float: none;
     line-height: 23.16px;
     position: static;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
 }
 
 h5:first-child {

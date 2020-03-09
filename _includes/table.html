@@ -1,6 +1,6 @@
 {% for section in site.data.sections %}
 
-    <div class="col-2 btn cat" id="" type="button" data-toggle="collapse" data-target="#{{section.id}}-table" aria-expanded="false" aria-controls="{{section.id}}-table">
+    <div class="col-2 btn cat" type="button" data-toggle="collapse" data-target="#{{section.id}}-table" aria-expanded="false" aria-controls="{{section.id}}-table">
         <h5 style="display: inline-block; text-align: center; margin-top: 0;">
             <div style="width: 100%">
                 <i class="{{section.icon}} category-icon"></i>
@@ -10,7 +10,7 @@
         </h5>
     </div>
 
-    <div id="{{section.id}}-table" class="collapse">
+    <div id="{{section.id}}-table" class="collapse category-table">
         <table class="table table-hover table-bordered table-bordered">
             <thead>
                 <tr>
@@ -85,7 +85,7 @@
                                             <i class="tfa-icon fas fa-check col"></i>
                                         {% endif %}
                                         {% if tfa contains "proprietary" %}
-                                            <i class="tfa-icon fas fa-info col"></i>
+                                            <i class="tfa-icon fas fa-info col" title="Proprietary software based"></i>
                                         {% endif %}
                                     </div>
                                 </td>
