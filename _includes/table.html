@@ -5,7 +5,7 @@
     <table class="table table-hover table-bordered table-bordered">
         <thead>
             <tr>
-                <th scope="col"><a name="{{section_id}}">{{ section_title }}</a></th>
+                <th scope="col">{{ section_title }}</th>
                 <th scope="col">Docs</th>
                 <th scope="col">SMS</th>
                 <th scope="col">Phone Call</th>
@@ -19,98 +19,107 @@
 
                 {% if website.tfa %}
                     <tr class="table-success">
-                {%else %}
-                    <tr class="table-danger">
-                {% endif %}
-
-                <td>
-                    <div class="row no-gutters">
-                       <img class="logo lazyload" data-src="/img/{{ section_id }}/{{ website.img }}" src="/img/placeholder.png">
-                       <a class="site-name" href="{{ website.url }}">{{ website.name }}</a>
-                    </div>
-                </td>
-
-                {% assign tfa = website.tfa %}
-                {% if website.tfa %}
-
-                    {% if website.doc %}
-                        <td class="icon-cell">
-                            <a href="{{ website.doc }}">
-                                <i class="fas fa-book"></i>
-                            </a>
-                        </td>
-                    {% else %}
-                        <td class="icon-cell"></td>
-                    {% endif %}
-
-                    <td class="icon-cell">
-                        {% if tfa contains "sms" %}
-                            <i class="tfa-icon  fas fa-check"></i>
+                    {%else %}
+                        <tr class="table-danger">
                         {% endif %}
-                    </td>
 
-                    <td class="icon-cell">
-                        {% if tfa contains "phone" %}
-                            <i class="tfa-icon  fas fa-check"></i>
-                        {%endif%}</td>
-                    </td>
-
-                    <td class="icon-cell">
-                        {% if tfa contains "email" %}
-                            <i class="tfa-icon  fas fa-check"></i>
-                        {% endif %}
-                    </td>
-
-                    <td class="icon-cell">
-                        <div class="row">
-                            {% if tfa contains "hardware" %}
-                                <i class="tfa-icon  fas fa-check col"></i>
-                            {% endif %}
-
-                            {% if tfa contains "u2f" %}
-                                <i class="tfa-icon u2f-icon col" title="U2F"><img alt="U2F" height="20" src="/img/u2f.svg" type="image/svg"></i>
-                            {% endif %}
-                        </div>
-                    </td>
-
-                    <td class="icon-cell">
-                        <div class="row">
-                            {% if tfa contains "totp" %}
-                                <i class="tfa-icon fas fa-check col"></i>
-                            {% endif %}
-                            {% if tfa contains "proprietary" %}
-                                <i class="tfa-icon fas fa-info col" title="Proprietary software based"></i>
-                            {% endif %}
-                        </div>
-                    </td>
-
-                {% else %}
-
-                    <td colspan="6" style="text-align: left;">
-                        Tell them to support 2FA!
-                        <div class="social-button-group">
-                            {% if website.twitter %}
-                                <div class="twitter-button social-button btn">
-                                    <i class="fab fa-twitter"></i>
-                                    On Twitter
-                                </div>
-                            {% endif %}
-                            {% if website.facebook %}
-                                <div class="facebook-button social-button btn">
-                                    <i class="fab fa-facebook-f"></i>
-                                    On Facebook
-                                </div>
-                            {% endif %}
-                            {% if website.email_address %}
-                                <div class="email-button social-button btn">
-                                    <i class="fas fa-envelope"></i>
-                                    Via Email</div>
-                            {% endif %}
-                        </div>
+                        <td>
+                            <div class="row no-gutters">
+                                <img class="logo lazyload" data-src="/img/{{ section_id }}/{{ website.img }}" src="/img/placeholder.png">
+                                <a class="site-name" href="{{ website.url }}">{{ website.name }}</a>
+                            </div>
                         </td>
-                    {% endif %}
-                </tr>
-            {% endfor %}
+
+                        {% assign tfa = website.tfa %}
+                        {% if website.tfa %}
+
+                            {% if website.doc %}
+                                <td class="icon-cell">
+                                    <a href="{{ website.doc }}">
+                                        <i class="fas fa-book"></i>
+                                    </a>
+                                </td>
+                            {% else %}
+                                <td class="icon-cell"></td>
+                            {% endif %}
+
+                            <td class="icon-cell desktop-only">
+                                {% if tfa contains "sms" %}
+                                    <i class="tfa-icon  fas fa-check"></i>
+                                {% endif %}
+                            </td>
+
+                            <td class="icon-cell desktop-only">
+                                {% if tfa contains "phone" %}
+                                    <i class="tfa-icon  fas fa-check"></i>
+                                    {%endif%}</td>
+                            </td>
+                            <td class="icon-cell desktop-only">
+                                {% if tfa contains "email" %}
+                                    <i class="tfa-icon  fas fa-check"></i>
+                                {% endif %}
+                            </td>
+
+                            <td class="icon-cell desktop-only">
+                                <div class="row">
+                                    {% if tfa contains "hardware" %}
+                                        <i class="tfa-icon  fas fa-check col"></i>
+                                    {% endif %}
+
+                                    {% if tfa contains "u2f" %}
+                                        <i class="tfa-icon u2f-icon col" title="U2F"><img alt="U2F" height="20" src="/img/u2f.svg" type="image/svg"></i>
+                                    {% endif %}
+                                </div>
+                            </td>
+
+                            <td class="icon-cell desktop-only">
+                                <div class="row">
+                                    {% if tfa contains "totp" %}
+                                        <i class="tfa-icon fas fa-check col"></i>
+                                    {% endif %}
+                                    {% if tfa contains "proprietary" %}
+                                        <i class="tfa-icon fas fa-info col" title="Proprietary software based"></i>
+                                    {% endif %}
+                                </div>
+                            </td>
+
+                            <td class="icon-cell mobile-only" colspan="5">
+
+                                {% for tfa_option in tfa %}
+                                    {{ tfa_option | replace: "proprietary", "proprietary software" | replace: "hardware", "Hardware tokens" | capitalize | replace: "Sms", "SMS" | replace: "Totp", "TOTP" | replace: "U2f", "U2F" }}
+                                    {% unless tfa_option == tfa.last %},
+                                    {% endunless %}
+                                {% endfor %}
+                            </td>
+
+                        {% else %}
+
+                            <td colspan="6" style="text-align: left;">
+                                Tell them to support 2FA!
+                                <div class="social-button-group">
+                                    {% if website.twitter %}
+                                        <div class="twitter-button social-button btn">
+                                            <i class="fab fa-twitter"></i>
+                                            On Twitter
+                                        </div>
+                                    {% endif %}
+                                    {% if website.facebook %}
+                                        <div class="facebook-button social-button btn">
+                                            <i class="fab fa-facebook-f"></i>
+                                            On Facebook
+                                        </div>
+                                    {% endif %}
+                                    {% if website.email_address %}
+                                        <div class="email-button social-button btn">
+                                            <i class="fas fa-envelope"></i>
+                                            Via Email</div>
+                                    {% endif %}
+                                </div>
+                            </td>
+                        {% endif %}
+                    </tr>
+                {% endfor %}
+            </tbody>
         </tbody>
     </table>
 </div>

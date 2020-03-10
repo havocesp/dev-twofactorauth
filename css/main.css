@@ -170,3 +170,14 @@ h5:first-child {
 .category-row {
     margin: 2vh auto;
 }
+
+@media screen and (min-width: 769px ){
+    .mobile-only {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .desktop-only {
+        display: none;
+    }
+}
