@@ -1,17 +1,17 @@
 {% assign section_id = include.id-param %}
 {% assign section_title = include.title-param %}
 
-<div id="{{section_id}}-table" class="collapse category-table">
+<div id="{{section_id}}-table" class="collapse category-table desktop-only">
     <table class="table table-hover table-bordered table-bordered">
         <thead>
             <tr>
-                <th scope="col">{{ section_title }}</th>
-                <th scope="col">Docs</th>
-                <th scope="col">SMS</th>
-                <th scope="col">Phone Call</th>
-                <th scope="col">Email</th>
-                <th scope="col">Hardware token</th>
-                <th scope="col">Software token</th>
+                <th scope="col desktop-only">{{ section_title }}</th>
+                <th scope="col desktop-only">Docs</th>
+                <th scope="col desktop-only">SMS</th>
+                <th scope="col desktop-only">Phone Call</th>
+                <th scope="col desktop-only">Email</th>
+                <th scope="col desktop-only">Hardware token</th>
+                <th scope="col desktop-only">Software token</th>
             </tr>
         </thead>
         <tbody>
@@ -34,13 +34,13 @@
                         {% if website.tfa %}
 
                             {% if website.doc %}
-                                <td class="icon-cell">
+                                <td class="icon-cell desktop-only">
                                     <a href="{{ website.doc }}">
                                         <i class="fas fa-book"></i>
                                     </a>
                                 </td>
                             {% else %}
-                                <td class="icon-cell"></td>
+                                <td class="icon-cell desktop-only"></td>
                             {% endif %}
 
                             <td class="icon-cell desktop-only">
@@ -82,16 +82,6 @@
                                     {% endif %}
                                 </div>
                             </td>
-
-                            <td class="icon-cell mobile-only" colspan="5">
-
-                                {% for tfa_option in tfa %}
-                                    {{ tfa_option | replace: "proprietary", "proprietary software" | replace: "hardware", "Hardware tokens" | capitalize | replace: "Sms", "SMS" | replace: "Totp", "TOTP" | replace: "U2f", "U2F" }}
-                                    {% unless tfa_option == tfa.last %},
-                                    {% endunless %}
-                                {% endfor %}
-                            </td>
-
                         {% else %}
 
                             <td colspan="6" style="text-align: left;">

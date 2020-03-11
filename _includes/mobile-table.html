@@ -1,0 +1,71 @@
+{% assign section_id = include.id-param %}
+{% assign section_title = include.title-param %}
+
+<div id="{{section_id}}-table" class="collapse category-table mobile-only">
+    <table class="table table-hover table-bordered table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">{{ section_title }}</th>
+                <th scope="col">2FA options</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for website in site.data[section_id].websites %}
+
+                {% if website.tfa %}
+                    <tr class="table-success">
+                    {%else %}
+                        <tr class="table-danger">
+                        {% endif %}
+
+                        <td>
+                            <div class="row no-gutters">
+                                <img class="logo lazyload" data-src="/img/{{ section_id }}/{{ website.img }}" src="/img/placeholder.png">
+                                <a class="site-name" href="{{ website.url }}">{{ website.name }}</a>
+                            </div>
+                        </td>
+
+                        {% assign tfa = website.tfa %}
+                        {% if website.tfa %}
+
+                            <td class="icon-cell" colspan="6" style="width: max-content;">
+
+                                {% for tfa_option in tfa %}
+                                    {{ tfa_option | replace: "proprietary", "proprietary software" | replace: "hardware", "Hardware tokens" | capitalize | replace: "Sms", "SMS" | replace: "Totp", "TOTP" | replace: "U2f", "U2F" }}
+                                    {% unless tfa_option == tfa.last %},
+                                    {% endunless %}
+                                {% endfor %}
+
+                            </td>
+
+                        {% else %}
+
+                            <td colspan="6" style="text-align: left;">
+                                Tell them to support 2FA!
+                                <div class="social-button-group">
+                                    {% if website.twitter %}
+                                        <div class="twitter-button social-button btn">
+                                            <i class="fab fa-twitter"></i>
+                                            On Twitter
+                                        </div>
+                                    {% endif %}
+                                    {% if website.facebook %}
+                                        <div class="facebook-button social-button btn">
+                                            <i class="fab fa-facebook-f"></i>
+                                            On Facebook
+                                        </div>
+                                    {% endif %}
+                                    {% if website.email_address %}
+                                        <div class="email-button social-button btn">
+                                            <i class="fas fa-envelope"></i>
+                                            Via Email</div>
+                                    {% endif %}
+                                </div>
+                            </td>
+                        {% endif %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </tbody>
+    </table>
+</div>

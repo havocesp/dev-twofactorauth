@@ -18,9 +18,8 @@ thead {
 }
 
 .container {
-    width: calc(1127px + 2rem);
+    max-width: calc(1127px + 2rem);
     padding: 0;
-    max-width: 1500px;
 }
 
 #main {
@@ -173,11 +172,11 @@ h5:first-child {
 
 @media screen and (min-width: 769px ){
     .mobile-only {
-        display: none;
+        display: none !important;
     }
 }
 @media screen and (max-width: 768px){
     .desktop-only {
-        display: none;
+        display: none !important;
     }
 }

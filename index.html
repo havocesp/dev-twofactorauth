@@ -15,10 +15,11 @@ layout: default
             {% for section in site.data.sections limit: 5 offset: offcount %}
                 {% include table.html id-param=section.id title-param=section.title %}
             {% endfor %}
-        </div>
+
         {% if forloop.index != forloop.length %}
             {% assign rowcount = rowcount | plus: '1' %}
-            <div class="row justify-content-start category-row">
+            <div class="w-100 d-none d-md-block"></div>
+
             {% endif %}
         {% else %}
 
