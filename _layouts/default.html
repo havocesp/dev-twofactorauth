@@ -8,27 +8,27 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="default">
         <title>{{ site.title }}</title>
+        <link rel="apple-touch-startup-image" href="/img/icons/apple-launch_1125x2436.png" >
+        <link rel="apple-touch-icon" href="/img/icons/apple-icon_128x128.png" sizes="128x128">
+        <link rel="apple-touch-icon" href="/img/icons/apple-icon_180x180.png" sizes="180x180">
+        <link rel="apple-touch-icon" href="/img/icons/apple-icon_192x192.png" sizes="192x192">
         <link rel="icon" href="/img/icons/icon.svg">
         <link rel="icon" sizes="192x192" href="/img/icons/icon_192x192.png">
         <link rel="manifest" href="/manifest.json">
-        <link rel="apple-touch-startup-image" href="/img/icons/apple-launch_1125x2436.png" >
-        <link rel="apple-touch-icon" href="/img/icons/apple-icon_128x128.png.png" sizes="128x128">
-        <link rel="apple-touch-icon" href="/img/icons/apple-icon_180x180.png" sizes="180x180">
-        <link rel="apple-touch-icon" href="/img/icons/apple-icon_192x192.png" sizes="192x192">
-        <link rel="mask-icon" href="/img/icons/apple-touch-icon.png" color="{{ site.theme_color }}">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Spartan:200,300,400,500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
-        <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" rel="stylesheet"/>
-        <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" rel="stylesheet"/>
-        <link href="css/main.css" rel="stylesheet">
+        <link rel="mask-icon" href="/img/icons/apple-icon.svg" color="{{ site.theme_color }}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spartan:200,300,400,500&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y="/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" crossorigin="anonymous" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="/>
+        <link rel="stylesheet" href="/css/main.css">
     </head>
 
     <body>
 
         <div class="container">
             <div id="main">
-                <img id="logo" src="/img/icons/icon.svg">
+                <img id="logo" src="/img/icons/icon.svg" alt="">
                 <h2>Two Factor Auth (2FA)</h2>
                 <div class="sub header">List of websites and whether or not they support
                     <a href="https://en.wikipedia.org/wiki/Two-factor_authentication">2FA</a>.
@@ -41,6 +41,6 @@
         <script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script crossorigin="anonymous" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
-        <script src="js/main.js"></script>
+        <script src="/js/main.js"></script>
     </body>
 </html>
