@@ -1,10 +1,12 @@
+---
+---
 {
-  "name": "Two Factor Auth List",
-  "short_name": "Two Factor Auth",
-  "start_url": "./",
+  "name": "{{site.title}}",
+  "short_name": "{{ site.title }}",
+  "start_url": "/",
   "display": "standalone",
-  "description": "{{site.description}}",
-  "theme_color": "#39cccc",
+  "description": "{{ site.description }}",
+  "theme_color": "{{ site.theme_color }}",
   "icons": [
     {
       "src": "/img/icons/icon_32x32.png",

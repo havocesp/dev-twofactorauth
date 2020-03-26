@@ -1,7 +1,7 @@
 permalink: pretty
 markdown: kramdown
 
-title: Two Factor Auth List
+title: Two Factor Auth
 author: Josh Davis
 description:
     List of sites with Two Factor Auth support which includes SMS, email,
@@ -11,6 +11,7 @@ repo: https://github.com/2factorauth/twofactorauth
 img: img/logo.png
 twitter: 2faorg
 social_image: https://repository-images.githubusercontent.com/17724730/63495880-b408-11e9-8cc4-03451aa4cc14
+theme_color: "#39cccc"
 exclude:
     - CNAME
     - CONTRIBUTING.md

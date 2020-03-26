@@ -156,16 +156,14 @@ h5:first-child {
 }
 
 .category-icon {
-    border-radius: 50%;
     background-color: #fff;
-    border: solid #fff 1.5vh;
     font-size: 36px;
-    margin: auto 18px;
-    height: 73px;
-    width: 73px;
+    margin: 15px auto;
     text-align: center;
 }
-
+.fa-2x {
+    vertical-align: middle;
+}
 .category-row {
     margin: 2vh auto;
 }

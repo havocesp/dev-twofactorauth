@@ -1,8 +1,11 @@
 <div class="col-12 col-md btn cat" type="button" data-toggle="collapse" data-target="#{{section.id}}-table" aria-expanded="false" aria-controls="{{section.id}}-table">
         <h5 style="display: inline-block; text-align: center; margin-top: 0;">
-            <div style="width: 100%">
-                <i class="{{section.icon}} category-icon"></i>
+
+            <div style="width: 100%;">
+                <div style="display: flex; align-items: center; margin: auto;">
+                <i class="{{section.icon}} category-icon fa-fw"></i>
+                </div>
+                <small class="category-title">{{ section.title }}</small>
             </div>
-            <small class="category-title">{{ section.title }}</small>
         </h5>
 </div>
