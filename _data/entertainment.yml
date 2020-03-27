@@ -10,7 +10,7 @@ websites:
     url: https://www.cdbaby.com/
     twitter: cdbaby
     facebook: cdbaby
-    img: cdbaby.png
+    img: cdbaby.svg
 
   - name: Crunchyroll
     url: https://www.crunchyroll.com/
@@ -28,7 +28,7 @@ websites:
     url: https://www.disneyplus.com
     twitter: disneyplus
     facebook: DisneyPlus
-    img: disneyplus.png
+    img: disneyplus.svg
 
   - name: Filmweb
     url: https://www.filmweb.pl
@@ -39,13 +39,13 @@ websites:
 
   - name: Floatplane
     url: https://www.floatplane.com/
-    img: floatplane.png
+    img: floatplane.svg
     tfa:
       - totp
 
   - name: Google Play
     url: https://play.google.com
-    img: googleplay.png
+    img: googleplay.svg
     tfa:
       - sms
       - phone
@@ -64,7 +64,7 @@ websites:
     url: https://www.hulu.com/
     twitter: hulu_support
     facebook: hulu
-    img: hulu.png
+    img: hulu.svg
 
   - name: IBM Watson Media (Ustream)
     url: https://video.ibm.com
@@ -74,7 +74,7 @@ websites:
 
   - name: IMDb
     url: https://www.imdb.com
-    img: imdb.png
+    img: imdb.svg
     twitter: IMDb
     facebook: imdb
     email_address: support-imdb@imdb.com
@@ -96,7 +96,7 @@ websites:
     url: https://www.netflix.com/us/
     twitter: Netflixhelps
     facebook: netflix
-    img: netflix.png
+    img: netflix.svg
 
   - name: Niconico
     url: https://www.nicovideo.jp/
@@ -122,7 +122,7 @@ websites:
     url: https://www.plex.tv
     twitter: plex
     facebook: plexapp
-    img: plex.png
+    img: plex.svg
 
   - name: Qobuz
     url: https://www.qobuz.com
@@ -144,7 +144,7 @@ websites:
 
   - name: smashcast
     url: https://www.smashcast.tv/
-    img: smashcast.png
+    img: smashcast.svg
     tfa:
       - totp
 
@@ -152,20 +152,20 @@ websites:
     url: https://soundcloud.com/
     twitter: SCsupport
     facebook: SoundCloud
-    img: soundcloud.png
+    img: soundcloud.svg
 
   - name: Spotify
     url: https://www.spotify.com/
     twitter: SpotifyCares
     facebook: spotify
-    img: spotify.png
+    img: spotify.svg
 
   - name: TIDAL
     url: https://tidal.com/
     twitter: TIDALSupport
     facebook: TIDAL
     email_address: support@tidal.com
-    img: tidal.png
+    img: tidal.svg
 
   - name: TiVo
     url: https://www.tivo.com/
@@ -182,7 +182,7 @@ websites:
 
   - name: Twitch
     url: https://www.twitch.tv/
-    img: twitch.png
+    img: twitch.svg
     tfa:
       - sms
       - proprietary
@@ -193,11 +193,11 @@ websites:
     url: https://vimeo.com/
     twitter: Vimeo
     facebook: Vimeo
-    img: vimeo.png
+    img: vimeo.svg
 
   - name: YouTube
     url: https://www.youtube.com/
-    img: youtube.png
+    img: youtube.svg
     tfa:
       - sms
       - phone
