@@ -18,7 +18,7 @@ thead {
 }
 
 .container {
-    max-width: calc(1127px + 2rem);
+    max-width: calc(1327px + 2rem);
     padding: 0;
 }
 
@@ -133,7 +133,9 @@ td {
 .category-table, table {
     width: 100%;
 }
-
+.no-border{
+    border-radius: 0 !important;
+}
 .cat > h5 {
     box-sizing: border-box;
     display: inline-block;
@@ -160,7 +162,12 @@ h5:first-child {
     font-size: 36px;
     margin: 15px auto;
     text-align: center;
+    width: 1.7em;
+    line-height: 1.64em;
+    border-radius: 50%;
+    border: solid #ccc 2px;
 }
+
 .fa-2x {
     vertical-align: middle;
 }
