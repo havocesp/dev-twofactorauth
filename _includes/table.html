@@ -5,13 +5,13 @@
     <table class="table table-hover table-bordered table-bordered">
         <thead>
             <tr>
-                <th scope="col desktop-only">{{ section_title }}</th>
-                <th scope="col desktop-only">Docs</th>
-                <th scope="col desktop-only">SMS</th>
-                <th scope="col desktop-only">Phone Call</th>
-                <th scope="col desktop-only">Email</th>
-                <th scope="col desktop-only">Hardware token</th>
-                <th scope="col desktop-only">Software token</th>
+                <th scope="col">{{ section_title }}</th>
+                <th scope="col">Docs</th>
+                <th scope="col">SMS</th>
+                <th scope="col">Phone Call</th>
+                <th scope="col">Email</th>
+                <th scope="col">Hardware token</th>
+                <th scope="col">Software token</th>
             </tr>
         </thead>
         <tbody>
@@ -25,7 +25,7 @@
 
                         <td>
                             <div class="row no-gutters">
-                                <img class="logo lazyload" data-src="/img/{{ section_id }}/{{ website.img }}" src="/img/placeholder.png">
+                                <img class="logo lazyload{% if website.no_img_border %} no-border{%endif%}" data-src="/img/{{ section_id }}/{{ website.img }}" src="/img/placeholder.png">
                                 <a class="site-name" href="{{ website.url }}">{{ website.name }}</a>
                             </div>
                         </td>
@@ -34,33 +34,33 @@
                         {% if website.tfa %}
 
                             {% if website.doc %}
-                                <td class="icon-cell desktop-only">
+                                <td class="icon-cell">
                                     <a href="{{ website.doc }}">
                                         <i class="fas fa-book"></i>
                                     </a>
                                 </td>
                             {% else %}
-                                <td class="icon-cell desktop-only"></td>
+                                <td class="icon-cell"></td>
                             {% endif %}
 
-                            <td class="icon-cell desktop-only">
+                            <td class="icon-cell">
                                 {% if tfa contains "sms" %}
                                     <i class="tfa-icon  fas fa-check"></i>
                                 {% endif %}
                             </td>
 
-                            <td class="icon-cell desktop-only">
+                            <td class="icon-cell">
                                 {% if tfa contains "phone" %}
                                     <i class="tfa-icon  fas fa-check"></i>
                                     {%endif%}</td>
                             </td>
-                            <td class="icon-cell desktop-only">
+                            <td class="icon-cell">
                                 {% if tfa contains "email" %}
                                     <i class="tfa-icon  fas fa-check"></i>
                                 {% endif %}
                             </td>
 
-                            <td class="icon-cell desktop-only">
+                            <td class="icon-cell">
                                 <div class="row">
                                     {% if tfa contains "hardware" %}
                                         <i class="tfa-icon  fas fa-check col"></i>
@@ -72,7 +72,7 @@
                                 </div>
                             </td>
 
-                            <td class="icon-cell desktop-only">
+                            <td class="icon-cell">
                                 <div class="row">
                                     {% if tfa contains "totp" %}
                                         <i class="tfa-icon fas fa-check col"></i>
@@ -86,21 +86,21 @@
 
                             <td colspan="6" style="text-align: left;">
                                 Tell them to support 2FA!
-                                <div class="social-button-group">
+                                <div class="social-button-group" style="margin-left: 0.5vw;">
                                     {% if website.twitter %}
-                                        <div class="twitter-button social-button btn">
+                                        <div class="twitter-button social-button btn" style="height:100%;">
                                             <i class="fab fa-twitter"></i>
                                             On Twitter
                                         </div>
                                     {% endif %}
                                     {% if website.facebook %}
-                                        <div class="facebook-button social-button btn">
+                                        <div class="facebook-button social-button btn" style="height:100%;">
                                             <i class="fab fa-facebook-f"></i>
                                             On Facebook
                                         </div>
                                     {% endif %}
                                     {% if website.email_address %}
-                                        <div class="email-button social-button btn">
+                                        <div class="email-button social-button btn" style="height:100%;">
                                             <i class="fas fa-envelope"></i>
                                             Via Email</div>
                                     {% endif %}

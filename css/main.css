@@ -74,7 +74,7 @@ td {
 }
 
 .social-button {
-    width: 10vw;
+    width: 140px;
     color: white;
 }
 
@@ -174,13 +174,15 @@ h5:first-child {
 .category-row {
     margin: 2vh auto;
 }
-
-@media screen and (min-width: 769px ){
+.btn {
+    border-radius: 2px;
+}
+@media screen and (min-width: 993px ){
     .mobile-only {
         display: none !important;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 992px){
     .desktop-only {
         display: none !important;
     }

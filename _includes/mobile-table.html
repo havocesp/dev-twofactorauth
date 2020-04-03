@@ -10,7 +10,7 @@
         <!-- Title -->
         <div style="font-size: 18px;line-height: 53px;">
             <a class="site-name" href="{{ website.url }}">
-                <img class="logo lazyload" data-src="/img/{{ section_id }}/{{ website.img }}"
+                <img class="logo lazyload{% if website.no_img_border %} no-border{%endif%}" data-src="/img/{{ section_id }}/{{ website.img }}"
                      src="/img/placeholder.png">
                 {{ website.name }}</a>
         </div>
@@ -28,6 +28,15 @@
             {% endfor %}
 
         </div>
+
+        {% if website.doc %}
+        <div class="btn doc-btn col-11 col-sm-8 d-flex justify-content-center" style="background-color: #009fda;margin: 0 auto;">
+            <a href="{{ website.doc }}" style=" font-family: Spartan; color: #fff; text-decoration: none;">
+                <i class="fas fa-book" style="color: #fff !important;"></i>
+                Read more
+            </a>
+        </div>
+        {% endif %}
 
         {% else %}
 
