@@ -5,7 +5,34 @@ body {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #777;
+        background-color: #212121;
+        /*background: linear-gradient(#222,#333) fixed;*/
+        color: #eee;
+    }
+
+    .category-title {
+        color: #eee;
+    }
+
+    thead {
+        background-color: #262626 !important;
+        color: #eee;
+    }
+
+    thead > tr > th {
+        border-color: #424242 !important;
+    }
+
+    .table-success, .table-success > td {
+        background-color: #b1dfbb;
+    }
+
+    .table-danger, .table-danger > td {
+        background-color: #f1b0b7;
+    }
+
+    .category-icon {
+        background-color: #eee !important;
     }
 }
 
@@ -170,7 +197,7 @@ tr {
     position: static;
     font-family: 'Spartan', sans-serif;
     font-weight: 500;
-    font-size:93%;
+    font-size: 93%;
 }
 
 h5:first-child {
