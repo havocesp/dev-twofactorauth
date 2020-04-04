@@ -5,10 +5,10 @@ $(document).ready(function () {
         navigator.serviceWorker.register('service-worker.js');
     }
 
-    if (window.location.hash && window.location.hash.indexOf('#') > - 1) {
+    if (window.location.hash && window.location.hash.indexOf('#') > -1) {
         $('.collapse').collapse('hide');
-        $('#'+window.location.hash.substring(1)+"-table").collapse("show");
-        $('#'+window.location.hash.substring(1)+"-mobile-table").collapse("show");
+        $('#' + window.location.hash.substring(1) + "-table").collapse("show");
+        $('#' + window.location.hash.substring(1) + "-mobile-table").collapse("show");
     }
 });
 
@@ -20,6 +20,7 @@ $('.cat').click(function () {
     $('.collapse').collapse('hide');
 
 
+    window.location.hash = this.id;
     $('html, body').animate({
         scrollTop: $(this).offset().top - 25
     }, 1000);
