@@ -41,7 +41,7 @@ thead {
 
 table {
     font-family: 'Spartan', sans-serif;
-    border-radius: 5px;
+    border-radius: 2px;
     width: 100%;
 }
 
@@ -57,6 +57,11 @@ td {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px !important;
 }
+
+tr {
+    height: 65.5px;
+}
+
 .col {
     display: block;
 }
@@ -68,9 +73,20 @@ td {
     margin-right: .8em;
 }
 
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
+
 .site-name {
-    text-align: center;
+    text-align: left;
     margin: auto 0;
+    text-overflow: ellipsis;
+    width: calc(100% - 32px - 0.8em);
+    max-height: 52px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .social-button {
@@ -79,7 +95,7 @@ td {
 }
 
 .twitter-button {
-    background-color: dodgerblue;
+    background-color: #1DA1F2;
 }
 
 .facebook-button {
@@ -95,13 +111,14 @@ td {
     margin: auto;
 }
 
-.u2f-icon>img {
+.u2f-icon > img {
     text-align: center;
     margin: auto
 }
 
 .fa-book, .tfa-icon {
-    font-size: 20px;
+    font-size: 27px;
+    line-height: 35px;
 }
 
 .tfa-icon {
@@ -133,9 +150,11 @@ td {
 .category-table, table {
     width: 100%;
 }
-.no-border{
+
+.no-border {
     border-radius: 0 !important;
 }
+
 .cat > h5 {
     box-sizing: border-box;
     display: inline-block;
@@ -151,6 +170,7 @@ td {
     position: static;
     font-family: 'Spartan', sans-serif;
     font-weight: 500;
+    font-size:93%;
 }
 
 h5:first-child {
@@ -171,18 +191,22 @@ h5:first-child {
 .fa-2x {
     vertical-align: middle;
 }
+
 .category-row {
     margin: 2vh auto;
 }
+
 .btn {
     border-radius: 2px;
 }
-@media screen and (min-width: 993px ){
+
+@media screen and (min-width: 993px ) {
     .mobile-only {
         display: none !important;
     }
 }
-@media screen and (max-width: 992px){
+
+@media screen and (max-width: 992px) {
     .desktop-only {
         display: none !important;
     }
