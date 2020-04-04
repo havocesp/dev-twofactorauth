@@ -12,16 +12,16 @@ $(document).ready(function () {
     }
 });
 
-$('.cat').click(function (e) {
-});
-
 $('.cat').click(function () {
     // Collapse all other tables.
     $('.collapse').collapse('hide');
 
+    if (!$('#' + window.location.hash.substring(1) + "-table").hasClass('show') && !$('#' + window.location.hash.substring(1) + "-mobile-table").hasClass('show')) {
+        window.location.hash = this.id;
 
-    window.location.hash = this.id;
-    $('html, body').animate({
-        scrollTop: $(this).offset().top - 25
-    }, 1000);
+        // Scrolling animation. Disabled for now due to glitching.
+        /* $('html, body').animate({
+             scrollTop: $(this).offset().top - 25
+         }, 1000);*/
+    }
 });
