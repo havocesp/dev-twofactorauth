@@ -1,0 +1,49 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Get Cache
+        id: cache
+        uses: actions/cache@v1
+        with:
+          path: vendor/cache
+          key: ${{ runner.os }}-bundle-${{ hashFiles('**/Gemfile.lock') }}
+
+      - name: Install dependencies
+        run: |
+          sudo snap install ruby --classic
+          sudo npm i babel-minify -g
+          bundle config set path 'vendor/cache'
+          bundle config set cache_all true
+          bundle install --jobs 4 --retry 3
+          [ -d "vendor/cache" ] || { bundle package; }
+
+      - name: Minify content
+        run: |
+          ./_deployment/minify-js.sh
+          ./_deployment/minify-css.sh
+
+      - name: Build the site
+        run: bundle exec jekyll build
+
+      - name: Deploy to GH Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
+          target_branch: gh-pages
+          build_dir: _site
+          committer_name: Octocat
+          committer_email: octocat@users.noreply.github.com
+          fqdn: 2fa.carlgo11.com
+        env:
+          GITHUB_PAT: ${{ secrets.GH_TOKEN }}
