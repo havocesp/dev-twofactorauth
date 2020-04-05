@@ -22,11 +22,12 @@ jobs:
       - name: Install dependencies
         run: |
           sudo snap install ruby --classic
-          sudo npm i babel-minify -g
           bundle config set path 'vendor/cache'
           bundle config set cache_all true
           bundle install --jobs 4 --retry 3
+          sudo npm i babel-minify -g
           [ -d "vendor/cache" ] || { bundle package; }
+
 
       - name: Minify content
         run: |
