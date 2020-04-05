@@ -25,3 +25,5 @@ exclude:
     - websites_schema.yml
     - api/v2/README.md
     - .idea/**
+sass:
+    style: compressed

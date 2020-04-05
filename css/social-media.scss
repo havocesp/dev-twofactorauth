@@ -1,0 +1,22 @@
+---
+---
+.social-button-group {
+  display: inline-block;
+}
+
+.social-button {
+  width: 140px;
+  color: white;
+
+  &.twitter-button {
+    background-color: #1DA1F2;
+  }
+
+  &.facebook-button {
+    background-color: #3b5998;
+  }
+
+  &.email-button {
+    background-color: #ea4235;
+  }
+}
