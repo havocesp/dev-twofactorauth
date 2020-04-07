@@ -32,7 +32,6 @@ jobs:
       - name: Minify content
         run: |
           ./_deployment/minify-js.sh
-          ./_deployment/minify-css.sh
 
       - name: Build the site
         run: bundle exec jekyll build
