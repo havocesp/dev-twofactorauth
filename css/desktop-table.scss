@@ -3,11 +3,13 @@
   /* Desktop table */
 .category-table {
   width: 100%;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2),0 0 0 1px rgba(0,0,0,0.08);
 
   table {
     font-family: 'Spartan', sans-serif;
     border-radius: 2px;
     width: 100%;
+    margin-bottom: 0;
 
     thead {
       th {
