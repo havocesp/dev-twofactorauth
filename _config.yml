@@ -9,6 +9,7 @@ url: https://twofactorauth.org
 repo: https://github.com/2factorauth/twofactorauth
 img: /img/logo.png
 twitter: 2faorg
+env: production
 social_image: https://repository-images.githubusercontent.com/17724730/63495880-b408-11e9-8cc4-03451aa4cc14
 theme_color: "#39CCCC"
 exclude:
