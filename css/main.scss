@@ -180,6 +180,12 @@ thead {
   box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2),0 0 0 1px rgba(0,0,0,0.08);
 }
 
+.footer {
+  bottom: 0;
+  margin: 30px auto auto;
+  text-align: center;
+}
+
 @media screen and (min-width: 993px) {
   .mobile-only {
     display: none !important;
