@@ -45,8 +45,11 @@
             </div>
 
             {{ content }}
+        </div>
 
-            <div class="footer">Created by <a href="https://joshldavis.com">Josh Davis</a> and maintained by <a href="https://github.com/2factorauth">2factorauth</a></div>
+        <div class="footer">
+            <div id="innerFooter">Created by <a href="https://joshldavis.com">Josh Davis</a> and maintained by <a href="https://github.com/2factorauth">2factorauth</a></div>
+            <div id="buildNumber" class="desktop-only">Build: {{ site.github.build_revision | slice: 0,8 }}</div>
         </div>
 
         <script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

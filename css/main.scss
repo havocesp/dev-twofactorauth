@@ -142,11 +142,9 @@ thead {
     margin-top: 0;
   }
 
-
   .fa-2x {
     vertical-align: middle;
   }
-
 
   .btn {
     border-radius: 2px;
@@ -155,7 +153,7 @@ thead {
 
 #outerSearchBox {
   height: 2.4em;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
   border: 1px #e3e3e3 solid;
   background-color: #fff;
   color: rgba(0, 0, 0, .77);
@@ -174,17 +172,35 @@ thead {
     border: none;
     width: calc(100% - 35px);
     height: 100%;
-    float: right
+    float: right;
+    outline: none;
   }
 }
+
 #outerSearchBox:focus-within, #outerSearchBox:hover {
-  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2),0 0 0 1px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
 .footer {
+  padding-top: 4vh;
   bottom: 0;
-  margin: 30px auto auto;
-  text-align: center;
+  margin: 30px 2vh auto;
+
+  #innerFooter {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: max-content;
+    padding-bottom: 2vh;
+  }
+
+  #buildNumber {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    float: right;
+    color: #eee;
+  }
 }
 
 @media screen and (min-width: 993px) {
