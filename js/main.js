@@ -1,7 +1,7 @@
 $(document).ready(function () {
     lazyload();
 
-    if ('serviceWorker' in navigator) {
+     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('service-worker.js');
     }
 
@@ -10,20 +10,24 @@ $(document).ready(function () {
         $('#' + window.location.hash.substring(1) + "-table").collapse("show");
         $('#' + window.location.hash.substring(1) + "-mobile-table").collapse("show");
     }
+
+    $('.exception').popup({
+            position: 'right center',
+            title: 'Exceptions & Restrictions'
+        });
 });
 
 $('.cat').click(function () {
     // Collapse all other tables.
     $('.collapse').collapse('hide');
 
-    if (!$('#' + window.location.hash.substring(1) + "-table").hasClass('show') && !$('#' + window.location.hash.substring(1) + "-mobile-table").hasClass('show')) {
+    // Check if category tables are displayed
+    if (!$('#' + window.location.hash.substring(1) + "-table").hasClass('collapsing') && !$('#' + window.location.hash.substring(1) + "-mobile-table").hasClass('collapsing')) {
         window.location.hash = this.id;
         $('#' + window.location.hash.substring(1) + "-table").collapse("show");
         $('#' + window.location.hash.substring(1) + "-mobile-table").collapse("show");
-
-        // Scrolling animation. Disabled for now due to glitching.
-        /* $('html, body').animate({
-             scrollTop: $(this).offset().top - 25
-         }, 1000);*/
+    } else {
+        // Remove #category in URL
+        history.pushState("", document.title, window.location.pathname + window.location.search);
     }
 });

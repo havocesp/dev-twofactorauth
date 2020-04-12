@@ -27,7 +27,10 @@
                         <td>
                             <div class="row no-gutters">
                                 <img class="logo lazyload{% if website.no_img_border %} no-border{%endif%}" data-src="/img/{{ section_id }}/{{ website.img }}" src="/img/placeholder.png">
-                                <a class="site-name" href="{{ website.url }}">{{ website.name }}</a>
+                                <a class="site-name" href="{{ website.url }}" {% if website.exception %}style="margin-right: -24px"{% endif %}>{{ website.name }}</a>
+                                {% if website.exception %}
+                                    <i class="fas fa-exclamation-triangle exception" data-content="{{ website.exception }}"></i>
+                                {% endif %}
                             </div>
                         </td>
 
