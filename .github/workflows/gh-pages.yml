@@ -29,7 +29,7 @@ jobs:
           [ -d "vendor/cache" ] || { bundle package; }
 
       - name: Build region sites
-        working_directory: _deployment
+        working-directory: _deployment
         run: ruby regions.rb
 
       - name: Minify content
