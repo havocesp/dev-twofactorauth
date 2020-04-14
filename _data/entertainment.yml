@@ -23,12 +23,14 @@ websites:
     twitter: DeezerHelp
     facebook: Deezer
     img: deezer.png
+    no_img_border: true
 
   - name: Disney+
     url: https://www.disneyplus.com
     twitter: disneyplus
     facebook: DisneyPlus
     img: disneyplus.svg
+    no_img_border: true
 
   - name: Filmweb
     url: https://www.filmweb.pl
@@ -101,6 +103,7 @@ websites:
   - name: Niconico
     url: https://www.nicovideo.jp/
     img: niconico.png
+    no_img_border: true
     tfa:
       - totp
     doc: https://qa.nicovideo.jp/faq/show/4500

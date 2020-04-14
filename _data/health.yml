@@ -12,6 +12,7 @@ websites:
     tfa:
       - sms
       - email
+    region: au
 
   - name: Carilion Clinic
     url: https://www.carilionclinic.org
@@ -19,6 +20,7 @@ websites:
     twitter: CarilionClinic
     facebook: carilionclinic
     email_address: direct@carilionclinic.org
+    region: us
 
   - name: Cigna
     url: https://my.cigna.com
@@ -32,6 +34,7 @@ websites:
     twitter: CVSHealth
     facebook: CVS
     img: cvscaremark.png
+    region: us
 
   - name: drchrono
     url: https://www.drchrono.com
@@ -39,6 +42,7 @@ websites:
     tfa:
       - proprietary
     doc: https://www.drchrono.com/blog/two-factor-authentication-extra-security-for-your-health-records/
+    region: us
 
   - name: Drugs.com
     url: https://www.drugs.com/
@@ -46,6 +50,7 @@ websites:
     facebook: Drugscom
     img: drugscom.png
     status: https://twitter.com/Drugscom/status/493856207572975620
+    region: us
 
   - name: Elation Health
     url: https://www.elationhealth.com/

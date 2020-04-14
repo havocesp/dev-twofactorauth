@@ -27,7 +27,7 @@ websites:
 
   - name: Amazon
     url: https://www.amazon.com
-    img: amazon.png
+    img: amazon.svg
     tfa:
       - sms
       - totp
@@ -36,7 +36,7 @@ websites:
 
   - name: Apple
     url: https://appleid.apple.com
-    img: apple.png
+    img: apple.svg
     tfa:
       - sms
       - phone

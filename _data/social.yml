@@ -246,7 +246,8 @@ websites:
 
   - name: Twitter
     url: https://twitter.com
-    img: twitter.png
+    img: twitter.svg
+    no_img_border: true
     tfa:
       - sms
       - totp
