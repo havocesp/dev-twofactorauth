@@ -1,8 +1,4 @@
 regions:
-  sc:
-    - dk
-    - no
-    - se
-  na:
-    - us
-    - ca
+  - de
+  - se
+  - dk
