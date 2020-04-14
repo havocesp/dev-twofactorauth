@@ -28,10 +28,12 @@ jobs:
           sudo npm i babel-minify -g
           [ -d "vendor/cache" ] || { bundle package; }
 
+      - name: Build region sites
+        working_directory: _deployment
+        run: ruby regions.rb
 
       - name: Minify content
-        run: |
-          ./_deployment/minify-js.sh
+        run: ./_deployment/minify-js.sh
 
       - name: Build the site
         run: bundle exec jekyll build
