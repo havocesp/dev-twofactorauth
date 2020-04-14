@@ -26,8 +26,6 @@ regions.each do |region|
     websites = data['websites']
     section_array = []
 
-    next unless section['id'].to_s == 'banking'
-
     # Website loop
     websites.each do |website|
 
@@ -49,7 +47,7 @@ regions.each do |region|
   end
   out_dir = "#{Dir.pwd}/../#{region}"
   puts "Building #{region}..."
-  puts `cd #{dest_dir}; pwd; ls -la; bundle exec jekyll build -d #{out_dir} --config _config-regions.yml -V`
-  puts `cd #{out_dir}; rm -R -- */` # Delete Subdirectories
+  puts `cd #{dest_dir} && pwd && ls -la && bundle exec jekyll build -d #{out_dir} --config _config-regions.yml -V`
+  puts `cd #{out_dir} && rm -R -- */` # Delete Subdirectories
   puts "#{region} built!"
 end
