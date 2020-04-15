@@ -4,6 +4,7 @@ websites:
     twitter: AEPnews
     facebook: americanelectricpower
     img: aep.png
+    regions: [us]
 
   - name: Andrews &amp; Arnold
     url: https://aa.net.uk
@@ -12,6 +13,7 @@ websites:
       - totp
     doc: https://aa.net.uk/kb-broadband-2fa.html
     exception: "While both the accounts and control web pages support 2FA, each system is separate and requires its own setup."
+    regions: [uk]
 
   - name: Arcadia Power
     url: https://www.arcadiapower.com/
@@ -19,24 +21,28 @@ websites:
     facebook: ArcadiaPower
     email_address: customercare@arcadiapower.com
     img: arcadia.png
+    regions: [us]
 
   - name: AT&amp;T
     url: https://www.att.com/
     twitter: ATTCares
     facebook: ATT
     img: att.png
+    regions: [us]
 
   - name: Blau.de
     url: https://www.blau.de/
     img: blau.png
     facebook: blaumobilfunk
     lang: de
+    regions: [de]
 
   - name: BT
     url: https://www.bt.com/
     img: bt.png
     twitter: bt_uk
     facebook: BTUK
+    regions: [uk]
 
   - name: Bulb
     url: https://www.bulb.co.uk

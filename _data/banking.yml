@@ -4,7 +4,8 @@ websites:
     twitter: ActorsFCU
     facebook: ActorsFCU
     img: actorsfcu.png
-    region: us
+    regions:
+      - us
 
   - name: Addiko Bank
     url: https://www.addiko.hr/
@@ -13,7 +14,8 @@ websites:
       - totp
       - hardware
     doc: https://www.addiko.hr/static/uploads/mtoken-uputa-za-koristenje.pdf
-
+    regions:
+      - hr
 
   - name: AirBank
     url: https://www.airbank.cz
@@ -22,7 +24,8 @@ websites:
       - sms
       - proprietary
     doc: https://www.airbank.cz/co-vas-nejvic-zajima/jake-bezpecnostni-prvky-u-nas-mame
-    region: cz
+    regions:
+      - cz
 
   - name: Alliant Credit Union
     url: https://www.alliantcreditunion.org/
@@ -30,7 +33,8 @@ websites:
     tfa:
       - sms
     doc: https://www.alliantcreditunion.org/help/how-does-alliant-two-factor-authentication-work
-    region: us
+    regions:
+      - us
 
   - name: Ally Bank
     url: https://www.ally.com/
@@ -39,7 +43,8 @@ websites:
       - sms
       - email
     doc: https://www.ally.com/messages/sms/
-    region: us
+    regions:
+      - us
 
   - name: Altra Federal Credit Union
     url: https://www.altra.org/
@@ -47,14 +52,16 @@ websites:
     tfa:
       - sms
       - email
-    region: us
+    regions:
+      - us
 
   - name: America First Credit Union
     url: https://www.americafirst.com/
     twitter: AFCU
     facebook: americafirstcu
     img: americafirstcu.png
-    region: us
+    regions:
+      - us
 
   - name: America’s Christian Credit Union
     url: https://www.americaschristiancu.com
@@ -64,23 +71,24 @@ websites:
       - phone
       - email
     doc: https://www.americaschristiancu.com/ministry/services/online-banking-bill-pay.html
-    region: us
+    regions:
+      - us
 
   - name: Andrews Federal Credit Union
     url: https://www.andrewsfcu.org/
     twitter: AndrewsFederal
     facebook: AndrewsFederal
     img: andrewsfederalcu.png
-    region: us
+    regions:
+      - us
 
   - name: Australia and New Zealand Banking Group
     url: https://www.anz.com.au/
     twitter: ANZ_AU
     facebook: ANZAustralia
     img: anz.png
-    region:
+    regions:
       - au
-      - nz
 
   - name: Avanza
     url: https://www.avanza.se/
@@ -89,7 +97,8 @@ websites:
       - totp
       - hardware
     doc: https://www.avanza.se/kundservice.html/1335/tvafaktorsinloggning/d264248e-bea3-48a0-bf2d-157309734649
-    region: se
+    regions:
+      - se
 
   - name: Baden-Württembergische Bank
     url: https://www.bw-bank.de/
@@ -98,7 +107,8 @@ websites:
       - proprietary
       - hardware
     doc: https://meine.bw-bank.de/articles/am-14-september-tritt-psd2-in-kraft-was-bedeutet-das-fuer-sie
-    region: de
+    regions:
+      - de
 
   - name: Banca Mediolanum
     url: https://www.bmedonline.it
@@ -106,7 +116,8 @@ websites:
     twitter: BancaMediolanum
     facebook: BancaMediolanum
     lang: it
-    region: it
+    regions:
+      - it
 
   - name: Banco Ciudad
     url: https://www.bancociudad.com.ar
@@ -114,7 +125,8 @@ websites:
     twitter: BancoCiudad
     facebook: bancociudad
     lang: es
-    region: ar
+    regions:
+      - ar
 
   - name: Banco Galicia
     url: https://www.bancogalicia.com
@@ -122,7 +134,25 @@ websites:
     twitter: BancoGalicia
     facebook: bancogalicia
     lang: es
-    region: es
+    regions:
+      - ar
+
+  - name: Banco Macro
+    url: https://www.macro.com.ar
+    img: bancomacro.png
+    facebook: bancomacro
+    lang: es
+    regions:
+      - ar
+
+  - name: Banco Nación
+    url: https://www.bna.com.ar/
+    img: banconacion.png
+    facebook: banconacion
+    email_address: asistenciaproteccionusuarios@bna.com.ar
+    lang: es
+    regions:
+      - ar
 
   - name: Banco Provincia
     url: https://www.bancoprovincia.com.ar
@@ -130,7 +160,17 @@ websites:
     twitter: BPResponde
     facebook: bancoprovincia
     lang: es
-    region: ar
+    regions:
+      - ar
+
+  - name: Bancolombia
+    url: https://www.grupobancolombia.com
+    img: bancolombia.png
+    twitter: Bancolombia
+    facebook: bancolombia
+    lang: es
+    regions:
+      - cc
 
   - name: Bank Central Asia (BCA)
     url: https://www.bca.co.id/en
@@ -138,14 +178,16 @@ websites:
     tfa:
       - hardware
     doc: https://www.bca.co.id/en/Individu/Produk/E-Banking/Klik-BCA
-    region: id
+    regions:
+      - id
 
   - name: Bank Hapoalim
     url: https://www.bankhapoalim.co.il/
     img: poalim.png
     twitter: PoaliMarkeTweet
     lang: he
-    region: il
+    regions:
+      - il
 
   - name: Bank Leumi
     url: https://www.leumi.co.il/
@@ -153,7 +195,8 @@ websites:
     twitter: LeumiDigital
     facebook: LeumiDigital
     lang: he
-    region: il
+    regions:
+      - il
 
   - name: Bank of America
     url: https://www.bankofamerica.com/
@@ -162,7 +205,8 @@ websites:
       - sms
       - email
     doc: https://www.bankofamerica.com/security-center/online-banking/
-    region: us
+    regions:
+      - us
 
   - name: Bank of China (Hong Kong)
     url: https://www.bochk.com/
@@ -170,7 +214,8 @@ websites:
     tfa:
       - hardware
     doc: https://www.bochk.com/en/security/2factorauthentication.html
-    region: hk
+    regions:
+      - hk
 
   - name: Bank of Scotland
     url: https://www.bankofscotland.co.uk
@@ -180,7 +225,8 @@ websites:
       - phone
       - sms
     doc: https://www.bankofscotland.co.uk/aboutonline/changes-to-internet-banking.html
-    region: uk
+    regions:
+      - uk
 
   - name: Barclays UK
     url: https://www.barclays.co.uk/
@@ -189,7 +235,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.barclays.co.uk/ways-to-bank/online-banking/pinsentry-guide/
-    region: uk
+    regions:
+      - uk
 
   - name: Barclays US
     url: https://www.banking.barclaysus.com/
@@ -199,14 +246,16 @@ websites:
       - phone
       - email
     doc: https://www.barclaycardus.com/servicing/security-center?howWeProtectYou=#loginProcess
-    region: us
+    regions:
+      - us
 
   - name: BB&amp;T
     url: https://www.bbt.com/
     twitter: BBT
     facebook: BBTBank
     img: bbt.png
-    region: us
+    regions:
+      - us
 
   - name: BBBank
     url: https://www.bbbank.de/
@@ -215,7 +264,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.bbbank.de/produkte/konten-und-karten/online-banking/tan-verfahren.html
-    region: de
+    regions:
+      - de
 
   - name: BBVA Argentina
     url: https://www.bbva.com.ar/
@@ -223,14 +273,16 @@ websites:
     facebook: bbva.argentina
     twitter: bbva_argentina
     lang: es
-    region: ar
+    regions:
+      - ar
 
   - name: BBVA Compass
     url: https://www.bbvacompass.com/
     img: bbva.png
     facebook: bbvacompass
     twitter: BBVACompass
-    region: us
+    regions:
+      - us
 
   - name: Bethpage Federal Credit Union
     url: https://www.bethpagefcu.com/
@@ -238,7 +290,8 @@ websites:
     tfa:
       - sms
       - email
-    region: us
+    regions:
+      - us
 
   - name: Black Hills Federal Credit Union
     url: https://www.bhfcu.com
@@ -248,27 +301,31 @@ websites:
       - phone
       - email
     doc: https://www.bhfcu.com/Landing/Online-Banking-FAQs
-    region: us
+    regions:
+      - us
 
   - name: BMO Bank of Montreal
     url: https://www.bmo.com/
     twitter: BMO
     img: bmo.png
-    region: ca
+    regions:
+      - ca
 
   - name: BMO Harris Bank
     url: https://www.bmoharris.com/
     twitter: BMOHarrisBank
     facebook: BMOHarrisBank
     img: bmo.png
-    region: us
+    regions:
+      - us
 
   - name: Boeing Employee Credit Union
     url: https://www.becu.org/
     img: becu.png
     tfa:
       - sms
-    region: us
+    regions:
+      - us
 
   - name: BofI Federal Bank
     url: https://www.bofifederalbank.com/
@@ -277,7 +334,8 @@ websites:
       - sms
       - phone
     doc: https://www.mybankofinternet.com/tob/live/usp-core/static/help.html#login_security
-    region: us
+    regions:
+      - us
 
   - name: Boursorama
     url: https://www.boursorama.com/
@@ -285,7 +343,8 @@ websites:
     facebook: Boursorama-Banque-1741973942734447
     img: boursorama.png
     lang: fr
-    region: fr
+    regions:
+      - fr
 
   - name: Caisse D'Epargne
     url: https://www.caisse-epargne.fr/
@@ -293,7 +352,8 @@ websites:
     facebook: Caisse.Epargne
     img: caisse_epargne.png
     lang: fr
-    region: fr
+    regions:
+      - fr
 
   - name: Caixadirecta
     url: https://www.cgd.pt/
@@ -301,7 +361,8 @@ websites:
       - sms
     doc: https://www.cgd.pt/Ajuda/Seguranca/Pages/Autenticacao-Dupla-SMS-Token.aspx
     img: caixa_directa.png
-    region: pt
+    regions:
+      - pt
 
   - name: Capital One
     url: https://www.capitalone.com/
@@ -311,14 +372,16 @@ websites:
       - email
       - proprietary
     doc: https://www.capitalone.com/identity-protection/swiftid/
-    region: us
+    regions:
+      - us
 
   - name: CDC Federal Credit Union
     url: https://www.cdcfcu.com
     twitter: CDCCreditUnion
     facebook: CDCFederalCreditUnion
     img: cdcfcu.png
-    region: us
+    regions:
+      - us
 
   - name: Ceska Sporitelna
     url: https://www.csas.cz/en/
@@ -327,7 +390,8 @@ websites:
       - sms
       - proprietary
     doc: https://www.csas.cz/cs/mobilni-aplikace/george-klic
-    region: cz
+    regions:
+      - cz
 
   - name: Chase
     url: https://www.chase.com/
@@ -337,21 +401,28 @@ websites:
       - phone
       - email
     doc: "/notes/chase/"
-    region: us
+    regions:
+      - us
 
   - name: Chime
     url: https://www.chimebank.com
     img: chime.png
-    twitter: Chime
-    facebook: chimebank
-    region: us
+    tfa:
+      - sms
+    doc: https://www.chime.com/security-and-control/
+    regions:
+      - us
 
   - name: CIBC
-    url: https://www.cibc.ca
-    twitter: cibc
-    facebook: CIBC
+    url: https://www.cibc.com
     img: cibc.png
-    region: ca
+    tfa:
+      - sms
+      - phone
+      - email
+    doc: https://www.cibc.com/en/privacy-security/two-step-verification-b.html
+    regions:
+      - ca
 
   - name: Citibank
     url: https://online.citi.com/
@@ -360,21 +431,24 @@ websites:
       - sms
       - phone
     doc: https://online.citi.com/JRS/pands/detail.do?ID=SecurityCenter&section=security_tools
-    region: us
+    regions:
+      - us
 
   - name: Citibank Australia
     url: https://www.citibank.com.au/
     img: citibank.png
     twitter: CitiAustralia
     facebook: citiaustralia
-    region: au
+    regions:
+      - au
 
   - name: Citizens Bank
     url: https://www.citizensbank.com
     twitter: CitizensBank
     facebook: citizensbank
     img: citizensbank.png
-    region: us
+    regions:
+      - us
 
   - name: comdirect
     url: https://www.comdirect.de/
@@ -384,7 +458,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.comdirect.de/konto/psd2-phototan.html
-    region: de
+    regions:
+      - de
 
   - name: Commercial Bank of Qatar
     url: http://www.cbq.qa/
@@ -393,7 +468,8 @@ websites:
       - sms
     doc: https://cbonline.cbq.qa/RIB/Common/FAQContent
     exception: "An SMS capable phone with a Qatar phone number is required."
-    region: qa
+    regions:
+      - qa
 
   - name: Commerzbank
     url: https://www.commerzbank.de/
@@ -403,7 +479,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.commerzbank.de/portal/de/privatkunden/konten-karten/wissen/zahlungsverkehr-organisieren/psd2.html
-    region: de
+    regions:
+      - de
 
   - name: Commonwealth Bank of Australia
     url: https://www.commbank.com.au/
@@ -412,7 +489,8 @@ websites:
       - sms
       - hardware
     doc: https://www.commbank.com.au/support.digital-banking.explain-netcode-token.html
-    region: au
+    regions:
+      - au
 
   - name: Community America Credit Union
     url: https://www.communityamerica.com/
@@ -421,7 +499,8 @@ websites:
       - sms
       - phone
     doc: https://www.cacuonlinebanking.com/tob/live/usp-core/static/help.html#login_security
-    region: us
+    regions:
+      - us
 
   - name: Consorsbank
     url: https://www.consorsbank.de/
@@ -430,14 +509,16 @@ websites:
       - proprietary
       - hardware
     doc: https://www.consorsbank.de/ev/Service-Beratung/secureplus
-    region: de
+    regions:
+      - de
 
   - name: Credit Union Australia
     url: https://www.cua.com.au/
     img: cua.png
     twitter: CUA_Connect
     facebook: CUA
-    region: au
+    regions:
+      - au
 
   - name: DBS Bank Singapore
     url: https://www.dbs.com.sg/
@@ -445,7 +526,8 @@ websites:
     tfa:
       - hardware
     doc: https://www.dbs.com.sg/personal/deposits/security-and-you/we-protect-you.page#slideToN10051
-    region: sg
+    regions:
+      - sg
 
   - name: Degussa Bank
     url: https://www.degussa-bank.de/
@@ -455,7 +537,8 @@ websites:
       - sms
       - proprietary
     doc: https://www.degussa-bank.de/apptan-verfahren
-    region: de
+    regions:
+      - de
 
   - name: Desert Financial Credit Union
     url: https://www.desertfinancial.com
@@ -464,7 +547,8 @@ websites:
       - sms
       - email
     doc: https://www.desertfinancial.com/faq/online-solutions-faqs/security
-    region: us
+    regions:
+      - us
 
   - name: Desjardins
     url: https://www.desjardins.com/
@@ -473,7 +557,8 @@ websites:
       - sms
       - proprietary
     doc: https://www.desjardins.com/securite/validation-2-etapes/
-    region: ca
+    regions:
+      - ca
 
   - name: Deutsche Kreditbank (DKB)
     url: https://www.dkb.de/
@@ -482,7 +567,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.dkb.de/info/neue-anmeldung
-    region: de
+    regions:
+      - de
 
   - name: Digital Federal Credit Union
     url: https://www.dcu.org
@@ -492,7 +578,8 @@ websites:
       - phone
       - email
     doc: https://www.dcu.org/online-banking/online-banking-enhancements.html
-    region: us
+    regions:
+      - us
 
   - name: Discount Bank
     url: https://www.discountbank.co.il
@@ -500,13 +587,16 @@ websites:
     facebook: discountbank
     img: idb.png
     lang: he
-    region: il
+    regions:
+      - il
 
   - name: Discover (Banking)
     url: https://www.discover.com/online-banking/
     img: discover.png
     twitter: Discover
     facebook: discover
+    regions:
+      - us
 
   - name: Discover (Credit Cards)
     url: https://www.discover.com/
@@ -516,6 +606,8 @@ websites:
       - phone
       - email
     doc: https://www.discover.com/credit-cards/member-benefits/security-center/protect-account/account-verification.html
+    regions:
+      - us
 
   - name: DNB
     url: https://www.dnb.no/
@@ -525,21 +617,24 @@ websites:
       - hardware
       - sms
     doc: https://www.dnb.no/privat/kundeservice/innlogging-nettbank.html
-    region: no
+    regions:
+      - "no"
 
   - name: Dutch-Bangla Bank Limited (DBBL)
     url: https://www.dutchbanglabank.com/
     email_address: hrd_head@dbbl.com.bd
     img: dbbl.png
     lang: bn
-    region: nl
+    regions:
+      - bd
 
   - name: Easybank
     url: https://www.easybank.at
     facebook: easybank
     img: easybank.png
     lang: de
-    region: at
+    regions:
+      - at
 
   - name: Erste Bank Hrvatska
     url: https://www.erstebank.hr/
@@ -548,7 +643,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.erstebank.hr/content/dam/hr/ebc/www_erstebank_hr/gradani/downloads/e-bankarstvo/Upute%20za%20prijavu.pdf
-    region: hr
+    regions:
+      - hr
 
   - name: Fairwinds
     url: https://www.fairwinds.org
@@ -558,14 +654,16 @@ websites:
       - phone
       - email
     doc: https://www.fairwinds.org/inside/privacy/security_we.asp#multifactor-auth
-    region: us
+    regions:
+      - us
 
   - name: Fifth Third Bank
     url: https://www.53.com/
     twitter: FifthThird
     facebook: FifthThirdBank
     img: fifththird.png
-    region: us
+    regions:
+      - us
 
   - name: Fio banka
     url: https://www.fio.cz
@@ -573,7 +671,8 @@ websites:
     facebook: Fiobanka
     img: fio-cz.png
     lang: cz
-    region: cz
+    regions:
+      - cz
 
   - name: First Community Credit Union
     url: https://www.firstcommunity.com/
@@ -583,7 +682,8 @@ websites:
       - phone
       - email
     doc: https://www.firstcommunityexpressnet.com/tob/live/usp-core/static/help.html#login_security
-    region: us
+    regions:
+      - us
 
   - name: First Direct
     url: https://www1.firstdirect.com/
@@ -592,7 +692,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www1.firstdirect.com/help/secure-key/
-    region: us
+    regions:
+      - us
 
   - name: First Republic Bank
     url: https://www.firstrepublic.com/
@@ -602,7 +703,8 @@ websites:
       - phone
       - email
     doc: https://www.firstrepublic.com/resource/banking-online-faqs#su10
-    region: us
+    regions:
+      - us
 
   - name: First Tech Federal Credit Union
     url: https://www.firsttechfed.com/
@@ -611,7 +713,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.firsttechfed.com/Tools-and-Resources/Tools-and-Resources/What-You-Can-Do-To-Protect-Your-Privacy#3
-    region: us
+    regions:
+      - us
 
   - name: FirstBank
     url: https://www.efirstbank.com/
@@ -619,7 +722,8 @@ websites:
     facebook: efirstbank
     email_address: banking@efirstbank.com
     img: firstbank.png
-    region: us
+    regions:
+      - us
 
   - name: GLS Gemeinschaftsbank
     url: https://www.gls.de/
@@ -628,7 +732,8 @@ websites:
       - sms
       - hardware
     doc: https://www.gls.de/privatkunden/faq/allgemeines-finanz-glossar/was-ist-zwei-faktor-authentifizierung-1/
-    region: de
+    regions:
+      - de
 
   - name: Halifax
     url: https://www.halifax.co.uk
@@ -638,7 +743,8 @@ websites:
       - phone
       - sms
     doc: https://www.halifax.co.uk/aboutonline/changes-to-online-banking/
-    region: uk
+    regions:
+      - uk
 
   - name: Handelsbanken
     url: https://www.handelsbanken.se/
@@ -647,7 +753,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.handelsbanken.se/shb/INeT/ICentSv.nsf/Default/qAE99695C4C1D033DC12579120036EB43?Opendocument
-    region: se
+    regions:
+      - se
 
   - name: Hanseatic Bank
     url: https://www.hanseaticbank.de/
@@ -655,14 +762,15 @@ websites:
     tfa:
       - sms
     doc: https://www.hanseaticbank.de/services/hilfe-services/psd2
-    region: de
+    regions:
+      - de
 
   - name: Holvi
     url: https://www.holvi.com/
     img: holvi.png
     twitter: Holvi
     facebook: HolviCom
-    region:
+    regions:
       - at
       - be
       - fi
@@ -680,7 +788,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.hsbc.co.uk/help/security-centre/secure-key/secure-key-help/
-    region: uk
+    regions:
+      - uk
 
   - name: HSBC Argentina
     url: https://www.hsbc.com.ar/
@@ -688,14 +797,16 @@ websites:
     facebook: HSBCArgentina
     img: hsbc.png
     lang: es
-    region: ar
+    regions:
+      - ar
 
   - name: Huntington National Bank
     url: https://www.huntington.com
     twitter: Huntington_Bank
     facebook: HuntingtonBank
     img: huntingtonnationalbank.png
-    region: us
+    regions:
+      - us
 
   - name: HypoVereinsbank
     url: https://www.hypovereinsbank.de/
@@ -705,13 +816,16 @@ websites:
       - proprietary
       - hardware
     doc: https://www.hypovereinsbank.de/hvb/services/digitales-banking/psd2/tan-verfahren
-    region: de
+    regions:
+      - de
 
   - name: IberiaBank
     url: https://www.iberiabank.com
     twitter: IBERIABANK
     facebook: IberiaBank
     img: iberiabank.png
+    regions:
+      - us
 
   - name: ICBC Argentina
     url: https://www.icbc.com.ar
@@ -719,7 +833,8 @@ websites:
     facebook: ICBCArgentina
     img: icbc.png
     lang: es
-    region: ar
+    regions:
+      - ar
 
   - name: ICICI
     url: https://www.icicibank.com
@@ -727,22 +842,26 @@ websites:
     tfa:
       - sms
     doc: https://www.icicibank.com/online-safe-banking/otp.page
-    regoin: us
+    regions:
+      - us
 
   - name: ING (Luxembourg)
     url: https://www.ing.lu
     img: ing.png
     tfa:
       - hardware
-    doc: https://www.ing.lu/web/ING/EN/Personal/Customerservices/FAQ/MYING_FAQ_EN
-    region: lu
+      - proprietary
+    doc: https://www.ing.lu/webing/content/siteing/en/Individuals/Onlineproduct/Services/frequently-asked-questions/faq-online-banking-.html
+    regions:
+      - lu
 
   - name: ING Australia
     url: https://www.ing.com.au
     img: ing.png
     tfa:
       - sms
-    region: au
+    regions:
+      - au
 
   - name: ING-DiBa Austria
     url: https://www.ing.at
@@ -751,7 +870,8 @@ websites:
       - sms
       - proprietary
     doc: https://www.ing.at/haeufige-fragen-faq/pin-zugangsdaten
-    region: au
+    regions:
+      - at
 
   - name: ING-DiBa Deutschland
     url: https://www.ing.de
@@ -759,7 +879,8 @@ websites:
     tfa:
       - sms
     doc: https://www.ing.de/kundenservice/sicherheit/psd2/
-    region: de
+    regions:
+      - de
 
   - name: Intesa Sanpaolo
     url: https://www.intesasanpaolo.com
@@ -767,7 +888,8 @@ websites:
     tfa:
       - hardware
     doc: https://www.intesasanpaolo.com/it/common/footer/sicurezza.html
-    region: it
+    regions:
+      - it
 
   - name: Jovia Financial
     url: https://www.joviafinancial.com/
@@ -775,13 +897,15 @@ websites:
     tfa:
       - sms
       - phone
-    region: us
+    regions:
+      - us
 
   - name: KeyBank
     url: https://www.key.com
     twitter: KeyBank_Help
     img: keybank.png
-    region: us
+    regions:
+      - us
 
   - name: La Banque Postale
     url: https://www.labanquepostale.fr/
@@ -789,7 +913,8 @@ websites:
     facebook: labanquepostale
     img: labanquepostale.png
     lang: fr
-    region: fr
+    regions:
+      - fr
 
   - name: Lake Michigan Credit Union
     url: https://www.lmcu.org/
@@ -797,7 +922,8 @@ websites:
     tfa:
       - proprietary
     doc: https://www.lmcu.org/personal/banking/services/mobile-authenticator/
-    region: us
+    regions:
+      - us
 
   - name: LendingClub
     url: https://www.lendingclub.com/
@@ -805,13 +931,15 @@ websites:
     tfa:
       - email
     doc: https://help.lendingclub.com/hc/en-us/articles/360023227211
-    region: us
+    regions:
+      - us
 
   - name: LGE Community Credit Union
     url: https://www.lgeccu.org/
     twitter: LGEccu
     img: lgecommunitycu.png
-    region: us
+    regions:
+      - us
 
   - name: LHV
     url: https://www.lhv.ee/
@@ -820,7 +948,8 @@ websites:
     img: lhv.png
     email_address: info@lhv.ee
     lang: et
-    region: ee
+    regions:
+      - ee
 
   - name: Lloyds Bank
     url: https://www.lloydsbank.com/
@@ -830,7 +959,8 @@ websites:
       - phone
       - sms
     doc: https://www.lloydsbank.com/online-banking/changes-to-internet-banking.asp
-    region: uk
+    regions:
+      - uk
 
   - name: Länsförsäkringar
     url: https://www.lansforsakringar.se/
@@ -839,14 +969,16 @@ websites:
       - proprietary
       - hardware
     doc: https://www.lansforsakringar.se/privat/att-vara-kund/digitala-tjanster-telefonbank/internetbanken/
-    region: se
+    regions:
+      - se
 
   - name: MandT Bank
     url: https://www.mtb.com/
     img: mtbank.png
     twitter: MandT_Help
     facebook: MandTBank
-    region: us
+    regions:
+      - us
 
   - name: Marcus by Goldman Sachs
     url: https://www.marcus.com/
@@ -854,7 +986,8 @@ websites:
     tfa:
       - sms
       - email
-    region: us
+    regions:
+      - us
 
   - name: MBNA Canada
     url: https://www.mbna.ca
@@ -863,21 +996,24 @@ websites:
       - sms
       - phone
     doc: https://www.mbna.ca/help-centre/credit-cards/two-step-verification-faq/
-    region: ca
+    regions:
+      - ca
 
   - name: Meridian Credit Union
     url: https://www.meridiancu.ca
     img: meridian.png
     twitter: MeridianCU
     facebook: MeridianCreditUnion
-    region: ca
+    regions:
+      - ca
 
   - name: Monzo
     url: https://www.monzo.com
     twitter: monzo
     facebook: monzobank
     img: monzobank.png
-    region: uk
+    regions:
+      - uk
 
   - name: Mountain America Credit Union
     url: https://www.macu.com
@@ -886,7 +1022,8 @@ websites:
       - sms
       - phone
       - email
-    region: us
+    regions:
+      - us
 
   - name: N26
     url: https://n26.com
@@ -904,14 +1041,16 @@ websites:
       - phone
       - email
     doc: https://www.nasafcu.com/img/newebranch/ebranch_new.html
-    region: us
+    regions:
+      - us
 
   - name: National Australia Bank
     url: https://www.nab.com.au/
     img: nab.png
     twitter: NAB
     facebook: NAB
-    region: au
+    regions:
+      - au
 
   - name: Nationwide Building Society
     url: https://www.nationwide.co.uk/
@@ -920,7 +1059,8 @@ websites:
       - sms
       - hardware
     doc: https://www.nationwide.co.uk/support/security-centre/internet-banking-security/new-log-in-experience
-    region: uk
+    regions:
+      - uk
 
   - name: Natwest UK
     url: https://www.natwest.com/personal.ashx
@@ -928,7 +1068,8 @@ websites:
     tfa:
       - hardware
     doc: http://www.natwest.com/personal/online-banking/g1/banking-safely-online/card-reader.ashx
-    region: uk
+    regions:
+      - uk
 
   - name: Navy Federal Credit Union
     url: https://www.navyfederal.org/
@@ -937,7 +1078,8 @@ websites:
       - email
       - proprietary
     doc: https://nfcucloud.custhelp.com/app/answers/list/c/543
-    region: us
+    regions:
+      - us
 
   - name: netbank
     url: https://www.netbank.de/
@@ -946,7 +1088,8 @@ websites:
       - sms
       - proprietary
     doc: https://www.netbank.de/privatkunden/service/Starke-Kundenauthentifizierung/
-    region: de
+    regions:
+      - de
 
   - name: Nordea Sverige
     url: https://www.nordea.se/
@@ -955,29 +1098,42 @@ websites:
       - proprietary
       - hardware
     doc: https://www.nordea.se/privat/vardagstjanster/internet-mobil-telefon/bank-id.html
-    region: se
+    regions:
+      - se
 
   - name: Nordnet Finland
     url: https://www.nordnet.fi/
     img: nordnet.png
     twitter: nordnetFI
     lang: fi
-    region: fi
+    regions:
+      - fi
 
   - name: Nordnet Sverige
     url: https://www.nordnet.se/
     img: nordnet.png
     tfa:
       - proprietary
-    exception: "TFA only available for Swedish residents with BankID."
-    region: se
+    regions:
+      - se
+
+  - name: norisbank
+    url: https://www.norisbank.de/
+    img: norisbank.png
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.norisbank.de/service/zwei-faktor-authentifizierung.html
+    regions: [de]
 
   - name: Northeast Credit Union
     url: https://necu.org
     img: necu.png
     twitter: NortheastCU
     facebook: northeastcu
-    region: us
+    regions:
+      - us
 
   - name: Nubank
     url: https://www.nubank.com.br
@@ -985,7 +1141,8 @@ websites:
     twitter: nubankbrasil
     facebook: nubankbrasil
     lang: pt
-    region: br
+    regions:
+      - br
 
   - name: Openbank
     url: https://www.openbank.es
@@ -993,14 +1150,16 @@ websites:
     tfa:
       - sms
     doc: https://www.openbank.es/en/security
-    region: es
+    regions:
+      - es
 
   - name: Optum Bank
     url: https://www.optumbank.com
     img: optum.png
     twitter: myOptum
     facebook: myOptum
-    region: us
+    regions:
+      - us
 
   - name: OTP banka
     url: https://www.otpbanka.hr/
@@ -1009,12 +1168,14 @@ websites:
       - proprietary
       - hardware
     doc: https://www.otpbanka.hr/hr/upute/otp-token-upute-za-koristenje
-    region: hr
+    regions:
+      - hr
 
   - name: Partners Federal Credit Union
     url: https://partnersfcu.org/
     img: partners.png
-    region: us
+    regions:
+      - us
 
   - name: Patelco Credit Union
     url: https://www.patelco.org/
@@ -1023,14 +1184,16 @@ websites:
       - sms
       - phone
       - email
-    region: us
+    regions:
+      - us
 
   - name: PenFed
     url: https://www.penfed.org/
     twitter: PenFed
     facebook: PenFed
     img: penfed.png
-    region: us
+    regions:
+      - us
 
   - name: PNC Bank
     url: https://www.pnc.com/
@@ -1038,7 +1201,8 @@ websites:
     tfa:
       - sms
     doc: https://www.pnc.com/en/security-privacy/added-layer-security.html
-    region: us
+    regions:
+      - us
 
   - name: Podravska banka
     url: https://www.poba.hr/
@@ -1047,7 +1211,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.poba.hr/get_file.php?d=pobaklik__upute_gradani.pdf
-    region: hr
+    regions:
+      - hr
 
   - name: Postbank
     url: https://www.postbank.de/
@@ -1056,7 +1221,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.postbank.de/privatkunden/sicherheitsverfahren.html
-    region: de
+    regions:
+      - de
 
   - name: PosteItaliane
     url: https://www.poste.it/
@@ -1065,7 +1231,8 @@ websites:
     email_address: servizio.clienti@posteitaliane.it
     img: posteitaliane.png
     lang: it
-    region: it
+    regions:
+      - it
 
   - name: Rabobank
     url: https://www.rabobank.nl/
@@ -1073,7 +1240,8 @@ websites:
     tfa:
       - hardware
     doc: https://www.rabobank.nl/bedrijven/betalen/zelf-betalingen-doen/rabo-scanner/
-    region: nl
+    regions:
+      - nl
 
   - name: Raiffeisen Bank CZ
     url: https://www.rb.cz/
@@ -1081,20 +1249,23 @@ websites:
     doc: https://www.rb.cz/firemni-finance/podnikatele-a-male-firmy/prime-bankovnictvi/sluzby-pro-firemni-ucty/bezpecnost-internetoveho-bankovnictvi/
     tfa:
       - hardware
-    region: cz
+    regions:
+      - cz
 
   - name: RBC Royal Bank
     url: https://www.rbcroyalbank.com
     facebook: rbc
     img: rbc.png
-    region: uk
+    regions:
+      - uk
 
   - name: Regions Bank
     url: https://www.regions.com
     twitter: askRegions
     facebook: RegionsBank
     img: regionsbank.png
-    region: us
+    regions:
+      - us
 
   - name: Royal Bank of Scotland
     url: https://rbs.co.uk/
@@ -1102,7 +1273,8 @@ websites:
     tfa:
       - sms
     doc: https://personal.rbs.co.uk/personal/fraud-and-security/sca.html
-    region: uk
+    regions:
+      - uk
 
   - name: SAFE Credit Union
     url: https://safecu.org
@@ -1112,14 +1284,16 @@ websites:
       - phone
       - email
     doc: https://www.safecu.org/personal/online-security/enhanced-login-security
-    region: us
+    regions:
+      - us
 
   - name: San Diego County Credit Union
     url: https://www.sdccu.com
     twitter: sdccu
     facebook: SDCCU
     img: sdccu.png
-    region: us
+    regions:
+      - us
 
   - name: San Francisco Fire Credit Union
     url: https://www.sffirecu.org
@@ -1129,14 +1303,16 @@ websites:
       - phone
       - email
     doc: https://www.sffirecu.org/support/frequently-asked-questions/
-    region: us
+    regions:
+      - us
 
   - name: Santa Clara County Federal Credit Union
     url: https://www.sccfcu.org/
     twitter: SCCFCU
     facebook: SCCFCU
     img: sccfcu.png
-    region: us
+    regions:
+      - us
 
   - name: Santander AR
     url: https://www.santander.com.ar/
@@ -1144,7 +1320,8 @@ websites:
     twitter: Santander_Ar
     facebook: Santander.Ar
     lang: es
-    region: ar
+    regions:
+      - ar
 
   - name: Santander BR
     url: https://www.santander.com.br/
@@ -1153,7 +1330,8 @@ websites:
     facebook: santanderbrasil
     email_address: santander.email@santander.com.br
     lang: pt
-    region: br
+    regions:
+      - br
 
   - name: Santander PL
     url: https://santander.pl
@@ -1162,7 +1340,8 @@ websites:
       - sms
       - proprietary
     doc: https://www.santander.pl/klient-indywidualny/kontakt/pytania-i-odpowiedzi-bankowosc-internetowa
-    region: pl
+    regions:
+      - pl
 
   - name: Santander PT
     url: https://www.santander.pt/
@@ -1170,20 +1349,23 @@ websites:
     tfa:
       - sms
     doc: https://www.santander.pt/pt_PT/Particulares/Informacoes/psd2-diretiva-servicos-pagamento.html
-    region: pt
+    regions:
+      - pt
 
   - name: Santander UK
     url: https://www.santander.co.uk
     img: santander.png
     status: https://www.santander.co.uk/personal/support/ways-to-bank/changes-to-how-you-log-on-to-online-banking
-    region: uk
+    regions:
+      - uk
 
   - name: SchoolsFirst FCU
     url: https://www.schoolsfirstfcu.org/
     twitter: SchoolsFirstFCU
     facebook: SchoolsFirstFCU
     img: schoolsfirst.png
-    region: us
+    regions:
+      - us
 
   - name: Schwyzer Kantonalbank
     url: https://www.szkb.ch/
@@ -1191,13 +1373,15 @@ websites:
     tfa:
       - sms
     doc: https://www.szkb.ch/pub/ueber-die-szkb/servicezentrum/e-services/sicherheit
-    region: ch
+    regions:
+      - ch
 
   - name: Scotiabank
     url: https://www.scotiabank.com
     img: scotiabank.png
     twitter: ScotiabankHelps
     facebook: scotiabank
+    regions: [uk, us, au, br, ca, ch, hk, jp, in]
 
   - name: SEB
     url: https://seb.se/
@@ -1206,20 +1390,23 @@ websites:
       - proprietary
       - hardware
     doc: https://seb.se/privat/digitala-tjanster
-    region: se
+    regions:
+      - se
 
   - name: Service Credit Union
     url: https://www.servicecu.org/
     img: service_cu.png
     facebook: ServiceCreditUnion
-    region: us
+    regions:
+      - us
 
   - name: Servus Credit Union
     url: https://www.servus.ca
     twitter: ServusCU
     facebook: ServusCU
     img: servus-cu.png
-    region: ca
+    regions:
+      - ca
 
   - name: Simple
     url: https://www.simple.com/
@@ -1227,14 +1414,16 @@ websites:
     tfa:
       - sms
     doc: https://www.simple.com/help/articles/account-maintenance/security
-    region: us
+    regions:
+      - us
 
   - name: Simplii Financial
     url: https://www.simplii.com
     img: simplii.png
     facebook: SimpliiFinancial
     twitter: SimpliiFin
-    region: ca
+    regions:
+      - ca
 
   - name: SoFi
     url: https://www.sofi.com/
@@ -1242,7 +1431,8 @@ websites:
     tfa:
       - sms
     doc: https://www.sofi.com/blog/introducing-two-step-verification-sofi-next-level-account-protection/
-    region: us
+    regions:
+      - us
 
   - name: Sparda Banken
     url: https://www.sparda.de/
@@ -1251,7 +1441,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.sparda.de/online-sicherheit-psd2/
-    region: de
+    regions:
+      - de
 
   - name: Sparkasse
     url: https://www.sparkasse.de/
@@ -1261,14 +1452,16 @@ websites:
       - proprietary
       - hardware
     doc: https://www.sparkasse.de/service/sicherheit-im-internet/tan-verfahren.html
-    region: de
+    regions:
+      - de
 
   - name: Starling Bank
     url: https://www.starlingbank.com/
     img: starlingbank.png
     twitter: StarlingBank
     facebook: StarlingBankUK
-    region: uk
+    regions:
+      - uk
 
   - name: State Bank of India
     url: https://www.onlinesbi.com/
@@ -1277,7 +1470,8 @@ websites:
       - sms
       - proprietary
     doc: https://www.onlinesbi.com/sbijava/mobile/sbsecure_otp_app_faq.html
-    region: in
+    regions:
+      - in
 
   - name: State Employees Credit Union
     url: https://www.ncsecu.org/
@@ -1285,7 +1479,8 @@ websites:
     tfa:
       - sms
     doc: https://www.ncsecu.org/MobileServices/OneTimePasscode.html
-    region: us
+    regions:
+      - us
 
   - name: State Farm
     url: https://www.statefarm.com/
@@ -1294,14 +1489,16 @@ websites:
       - sms
       - email
     doc: https://www.statefarm.com/customer-care/privacy-security-center/identity-verification
-    region: us
+    regions:
+      - us
 
   - name: SunTrust
     url: https://www.suntrust.com/
     twitter: SunTrust
     facebook: suntrust
     img: suntrust.png
-    region: us
+    regions:
+      - us
 
   - name: Swedbank
     url: https://www.swedbank.se/
@@ -1310,7 +1507,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.swedbank.se/foretag/digitala-tjanster/mobilt-bankid/fragor-och-svar-om-mobilt-bankid.html
-    region: se
+    regions:
+      - se
 
   - name: Synchrony Bank
     url: https://www.synchronybank.com
@@ -1319,14 +1517,16 @@ websites:
       - sms
       - phone
     doc: https://www.synchronybank.com/why-synchrony/secure-banking/
-    region: us
+    regions:
+      - us
 
   - name: Tangerine
     url: https://www.tangerine.ca/
     twitter: TangerineBank
     facebook: TangerineBank
     img: tangerine.png
-    region: ca
+    regions:
+      - ca
 
   - name: TARGOBANK
     url: https://www.targobank.de/
@@ -1336,7 +1536,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.targobank.de/service/psd2/index.html
-    region: de
+    regions:
+      - de
 
   - name: TBC Bank
     url: https://www.tbcbank.ge
@@ -1345,7 +1546,8 @@ websites:
       - sms
       - proprietary
     doc: https://www.tbcbank.ge/web/en/web/guest/tbc-digipass
-    region: ge
+    regions:
+      - ge
 
   - name: TD Bank
     url: https://www.tdbank.com
@@ -1354,7 +1556,8 @@ websites:
       - sms
       - phone
     doc: https://www.td.com/privacy-and-security/privacy-and-security/how-we-protect-you/online-security/2fa.jsp
-    region: us
+    regions:
+      - us
 
   - name: TD Canada Trust
     url: https://www.tdcanadatrust.com
@@ -1363,14 +1566,16 @@ websites:
       - sms
       - phone
     doc: https://www.td.com/privacy-and-security/privacy-and-security/how-we-protect-you/online-security/2fa.jsp
-    region: ca
+    regions:
+      - ca
 
   - name: Tesco Bank
     url: https://www.tescobank.com/
     twitter: tescobankhelp
     facebook: tesco.bank
     img: tescobank.png
-    region: uk
+    regions:
+      - uk
 
   - name: TIAA Bank
     url: https://www.tiaabank.com
@@ -1379,7 +1584,8 @@ websites:
       - sms
       - phone
     doc: https://www.tiaabank.com/security?solutions=security-tools
-    region: us
+    regions:
+      - us
 
   - name: Tower Federal Credit Union
     url: https://www.towerfcu.org/
@@ -1388,7 +1594,8 @@ websites:
       - sms
       - phone
     doc: https://server.iad.liveperson.net/hc/s-81758502/cmd/kbresource/kb-8660536393490959114/front_page!PAGETYPE?category=5352
-    region: us
+    regions:
+      - us
 
   - name: Triodos Bank Deutschland
     url: https://www.triodos.de
@@ -1396,21 +1603,24 @@ websites:
     facebook: triodos.de
     img: triodosbank.png
     lang: de
-    region: de
+    regions:
+      - de
 
   - name: TSB Bank
     url: https://www.tsb.co.uk
     twitter: TSB
     facebook: TSBbankUK
     img: tsb.png
-    region: uk
+    regions:
+      - uk
 
   - name: UBI Banca
     url: https://www.ubibanca.com/
     img: ubibanca.png
     facebook: UBIBanca
     lang: it
-    region: it
+    regions:
+      - it
 
   - name: Umpqua Bank
     url: https://www.umpquabank.com/
@@ -1419,7 +1629,8 @@ websites:
       - sms
       - phone
     doc: https://www.umpquabank.com/personal-banking/online-banking-and-billpay/security-faqs/
-    region: us
+    regions:
+      - us
 
   - name: Unify Financial Credit Union
     url: https://www.unifyfcu.com
@@ -1429,21 +1640,24 @@ websites:
       - phone
       - email
     doc: https://www.unifyfcu.com/multi-factor-authentication-keep-bad-guys-out
-    region: us
+    regions:
+      - us
 
   - name: Union Bank
     url: https://www.unionbank.com/
     twitter: UnionBank
     facebook: UnionBank
     img: unionbank.png
-    region: us
+    regions:
+      - us
 
   - name: US Bank
     url: https://www.usbank.com/
     img: usbank.png
     tfa:
       - sms
-    region: us
+    regions:
+      - us
 
   - name: USAA
     url: https://www.usaa.com/
@@ -1453,7 +1667,8 @@ websites:
       - email
       - proprietary
     doc: https://www.usaa.com/inet/pages/security_token_logon_options
-    region: us
+    regions:
+      - us
 
   - name: UW Credit Union
     url: https://www.uwcu.org/
@@ -1463,7 +1678,8 @@ websites:
       - phone
       - proprietary
     doc: https://www.uwcu.org/OnlineBanking/OnlineSecurity/VerifyU.aspx
-    region: us
+    regions:
+      - us
 
   - name: VyStar Credit Union
     url: https://vystarcu.org/
@@ -1472,7 +1688,8 @@ websites:
       - sms
       - phone
     doc: https://vystarcu.org/Online-Services/Internet-Banking-Access/Internet-Mobile-Banking-New-User-Enrollment
-    region: us
+    regions:
+      - us
 
   - name: Wells Fargo
     url: https://www.wellsfargo.com/
@@ -1482,21 +1699,24 @@ websites:
       - phone
       - hardware
     doc: https://www.wellsfargo.com/privacy-security/advanced-access
-    region: us
+    regions:
+      - us
 
   - name: Wescom Credit Union
     url: https://www.wescom.org/
     twitter: Liz_Wescom
     facebook: WescomCreditUnion
     img: wescom.png
-    region: us
+    regions:
+      - us
 
   - name: Westminster Savings Credit Union (WSCU)
     url: https://www.wscu.com/
     twitter: wscu
     facebook: westminstersavings
     img: wscu.png
-    region: us
+    regions:
+      - us
 
   - name: Widiba
     url: https://www.widiba.it
@@ -1504,7 +1724,8 @@ websites:
     twitter: widiba_tw
     facebook: widiba.it
     lang: it
-    region: it
+    regions:
+      - it
 
   - name: Wilobank
     url: https://www.wilobank.com
@@ -1512,7 +1733,17 @@ websites:
     twitter: wilobank
     facebook: wilobank
     lang: es
-    region: ar
+    regions:
+      - ar
+
+  - name: Woodforest National Bank
+    url: https://www.woodforest.com/
+    img: woodforest.png
+    tfa:
+      - totp
+      - sms
+    doc: https://www.woodforest.com/Personal/Services/Online-Banking/Online-Banking-Security
+    regions: [us]
 
   - name: Zagrebačka banka
     url: https://www.zaba.hr/
@@ -1521,7 +1752,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.zaba.hr/home/token#pan3
-    region: hr
+    regions:
+      - hr
 
   - name: Zurich Cantonal Bank (ZKB)
     url: https://www.zkb.ch/
@@ -1530,7 +1762,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.zkb.ch/de/pr/pk/efinance/ebanking/login-verfahren.html
-    region: ch
+    regions:
+      - ch
 
   - name: ČSOB (Czech)
     url: https://www.csob.cz/
@@ -1539,4 +1772,5 @@ websites:
       - sms
       - proprietary
     doc: https://www.csob.cz/portal/people/accounts/internet-and-mobile-banking/csob-smart-key
-    region: cz
+    regions:
+      - cz

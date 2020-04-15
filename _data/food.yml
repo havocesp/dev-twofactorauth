@@ -4,32 +4,34 @@ websites:
     img: deliveroo.png
     twitter: Deliveroo
     facebook: Deliveroo
+    regions: [ae, uk, nl, fr, be, ir, es, it, sg, hk, kw]
 
   - name: DoorDash
     url: https://www.doordash.com
     img: doordash.png
     twitter: DoorDash
+    regions: [ca, us]
 
   - name: Dutch Bros
     url: https://dutchbros.com/
     img: dutchbros.png
     twitter: DutchBros
     facebook: dutchbros
-    region: us
+    regions: [us]
 
   - name: Espresso House
     url: https://espressohouse.com/
     img: espressohouse.png
     facebook: EspressoHouse
     email_address: support@espressohouse.se
-    region: se
+    regions: [se, dk, no]
 
   - name: Grubhub
     url: https://www.grubhub.com/
     img: grubhub.png
     facebook: grubhub
     twitter: Grubhub
-    region: us
+    regions: [us]
 
   - name: Lieferando
     url: https://www.lieferando.de/en/
@@ -37,7 +39,7 @@ websites:
     facebook: lieferando
     twitter: lieferando
     email_address: info@lieferando.de
-    region: de
+    regions: [de]
 
   - name: Max
     url: https://max.se/
@@ -45,20 +47,20 @@ websites:
     facebook: maxburgers
     twitter: maxburgers_se
     lang: sv
-    region: se
+    regions: [se]
 
   - name: Postmates
     url: https://postmates.com
     twitter: Postmates
     img: postmates.png
-    region: us
+    regions: [us]
 
   - name: Seamless
     url: https://www.seamless.com/
     img: seamless.png
     facebook: seamless
     twitter: Seamless
-    region: us
+    regions: [us]
 
   - name: Starbucks
     url: https://www.starbucks.com/
@@ -72,6 +74,7 @@ websites:
     img: tacobell.png
     twitter: tacobell
     facebook: tacobell
+    regions: [us, uk, fi, ch, sg, fr, au, br, ar, in, pl, nl, ru, ca, nz]
 
   - name: Wolt
     url: https://wolt.com/

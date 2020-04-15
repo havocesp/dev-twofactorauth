@@ -28,6 +28,7 @@ websites:
     url: https://auspost.com.au/
     img: auspost.png
     twitter: auspost
+    regions: [au]
 
   - name: Autodesk
     url: https://www.autodesk.com
