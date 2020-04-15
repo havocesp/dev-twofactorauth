@@ -29,10 +29,10 @@ regions.each do |region|
     # Website loop
     websites.each do |website|
 
-      if website['region'].nil?
+      if website['regions'].nil?
         section_array.push(website)
       else
-        section_array.push(website) if website['region'] == region.to_s
+        section_array.push(website) if website['regions'].include?(region.to_s)
       end
 
     end
@@ -43,11 +43,11 @@ regions.each do |region|
       file.write website_yaml
     end
 
-    puts(section_array)
   end
+
   out_dir = "#{Dir.pwd}/../#{region}"
   puts "Building #{region}..."
-  puts `cd #{dest_dir} && pwd && ls -la && bundle exec jekyll build -d #{out_dir} --config _config-regions.yml -V`
+  puts `cd #{dest_dir} && bundle exec jekyll build -d #{out_dir} --config _config-regions.yml` # Add -V for debugging
   puts `cd #{out_dir} && rm -R -- */` # Delete Subdirectories
   puts "#{region} built!"
 end
